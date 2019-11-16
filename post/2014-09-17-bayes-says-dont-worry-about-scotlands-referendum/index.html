@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="author" content="Daniel Marcelino">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="This post uses Bayesian methods to show the anti-independence vote has an overwhelming advantage over the pro-independence side.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#E31837">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="stylesheet" href="/css/chiefs-css.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24186657-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Data * Analysis &#43; R">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Data * Analysis &#43; R">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@dmarcelinobr">
+  <meta property="twitter:creator" content="@dmarcelinobr">
+  
+  <meta property="og:site_name" content="Data * Analysis &#43; R">
+  <meta property="og:url" content="/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/">
+  <meta property="og:title" content="Bayes says `don&#39;t worry` about Scotland&#39;s Referendum | Data * Analysis &#43; R">
+  <meta property="og:description" content="This post uses Bayesian methods to show the anti-independence vote has an overwhelming advantage over the pro-independence side."><meta property="og:image" content="/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/featured.jpeg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2014-09-17T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2014-09-17T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Bayes says `don&#39;t worry` about Scotland&#39;s Referendum | Data * Analysis &#43; R</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Data * Analysis &#43; R</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">
+            
+            <span>Home</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications_selected">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#posts">
+            
+            <span>Posts</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/featured_hu4696ba16c50d306a68ceddc930813da5_13400_800x0_resize_q75_box.jpeg');"></div>
+  <span class="article-header-caption">Posterior Distribution</span>
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Bayes says `don&#39;t worry` about Scotland&#39;s Referendum</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2014-09-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2014-09-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      September 17, 2014
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+  
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/dmarcelinobr" target="_blank">@dmarcelinobr</a>&nbsp
+  
+  
+  
+
+
+
+
+
+  
+
+
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/danielmarcelino/danielmarcelino.github.io/blob/master/content/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/index.Rmd" target="_blank">View source</a>&nbsp
+
+  
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/rstats/">rstats</a>, 
+    
+    <a href="/categories/reproducible/">reproducible</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum&amp;url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f&amp;title=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f&amp;title=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum&amp;body=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/featured_hu4696ba16c50d306a68ceddc930813da5_13400_680x500_fill_q90_box_smart1.jpeg" itemprop="image" alt="">
+        <span class="article-header-caption">Posterior Distribution</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Bayes says `don&#39;t worry` about Scotland&#39;s Referendum</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2014-09-17 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2014-09-17 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      September 17, 2014
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+  
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/dmarcelinobr" target="_blank">@dmarcelinobr</a>&nbsp
+  
+  
+  
+
+
+
+
+
+  
+
+
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/danielmarcelino/danielmarcelino.github.io/blob/master/content/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/index.Rmd" target="_blank">View source</a>&nbsp
+
+  
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/categories/rstats/">rstats</a>, 
+    
+    <a href="/categories/reproducible/">reproducible</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum&amp;url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f&amp;title=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f&amp;title=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Bayes%20says%20%60don%27t%20worry%60%20about%20Scotland%27s%20Referendum&amp;body=%2fpost%2f2014-09-17-bayes-says-dont-worry-about-scotlands-referendum%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p>Just few hours before Scots head to the polls, there is not an overwhelming advantage of the anti-independence vote. Actually, the margin is shorter than last time <a href="http://danielmarcelino.com/what-are-the-odds-of-an-independent-scotland/">I looked at it</a>, but despite such a growing trend in favor of the “Yes” campaign in the last weeks, the “No” side has an edge still. To frame this in terms of probabilities that <span class="math inline">\((\theta_{NO})\)</span> exceeds <span class="math inline">\((\theta_{YES})\)</span>, I write a short function (replicated <a href="https://gist.github.com/danielmarcelino/9cab589e474dd09dadbc">here</a>) that will use simulation from the Dirichlet distributions to compute the posterior probability that “No” exceeds “Yes” shown in the lovely chart below.</p>
+<div class="figure">
+<img src="featured.jpeg" alt="" />
+<p class="caption">Posterior Distribution</p>
+</div>
+<p>The data used here to draw the distributions were gathered from a series of polls and available at the wikipedia. The polls employ different methodologies and phrase questions differently. For instance, some surveys ask respondents how they would vote if this referendum were held today, others ask them how they intend to vote on 18th September. By aggregating them, any swing could be the by-product of the random variation to which all polls are subject.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/polls/">polls</a>
+  
+  <a class="badge badge-light" href="/tags/rstats/">rstats</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+  
+
+
+   
+  <div class = "github-edit">
+  <span class="article-tags">
+    <a class="badge badge-github" href="https://github.com/danielmarcelino/danielmarcelino.github.io/edit/master/content/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/index.Rmd" target="_blank"><i class="fas fa-pencil-alt"></i>&nbspSuggest an edit to this post on GitHub</a>&nbsp
+
+  
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/profile.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/">Daniel Marcelino</a></h5>
+    <h6 class="card-subtitle">Data/Political Scientist</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:dmarcelino@live.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/dmarcelinobr" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.instagram.com/dmarcelinobr" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://linkedin.com/in/daniel-marcelino-80968656" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.researchgate.net/profile/Daniel_Marcelino" target="_blank" rel="noopener">
+          <i class="fab fa-researchgate"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0001-6432-407X" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/danielmarcelino" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/792000/daniel" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "daniel-marcelino" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 Daniel Marcelino &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Java.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+    <script src="/js/external-link.js"></script>
+    
+
+  </body>
+</html>
+

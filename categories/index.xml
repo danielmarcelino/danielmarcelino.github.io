@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Data * Analysis &#43; R</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>reproducible</title>
+      <link>/categories/reproducible/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/reproducible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstats</title>
+      <link>/categories/rstats/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/rstats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>educational-assessment</title>
+      <link>/categories/educational-assessment/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
+      
+      <guid>/categories/educational-assessment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sports</title>
+      <link>/categories/sports/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
+      
+      <guid>/categories/sports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simulations</title>
+      <link>/categories/simulations/</link>
+      <pubDate>Thu, 15 Sep 2011 00:00:00 -0300</pubDate>
+      
+      <guid>/categories/simulations/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

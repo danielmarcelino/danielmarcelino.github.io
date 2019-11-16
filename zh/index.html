@@ -1,0 +1,1189 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="author" content="丹尼尔马塞利诺">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Daniel Marcelino&#39;s blog. This is where I try to put some of my ideas and projects in order.">
+
+  
+  <link rel="alternate" hreflang="en" href="/">
+  
+  <link rel="alternate" hreflang="pt" href="/pt/">
+  
+  <link rel="alternate" hreflang="zh-Hans" href="/zh/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#E31837">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/zh/styles.css">
+  
+  <link rel="stylesheet" href="/css/chiefs-css.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24186657-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="/zh/index.xml" type="application/rss+xml" title="数据 * 分析 &#43; R">
+  <link rel="feed" href="/zh/index.xml" type="application/rss+xml" title="数据 * 分析 &#43; R">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/zh/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@dmarcelinobr">
+  <meta property="twitter:creator" content="@dmarcelinobr">
+  
+  <meta property="og:site_name" content="数据 * 分析 &#43; R">
+  <meta property="og:url" content="/zh/">
+  <meta property="og:title" content="数据 * 分析 &#43; R">
+  <meta property="og:description" content="Daniel Marcelino&#39;s blog. This is where I try to put some of my ideas and projects in order."><meta property="og:image" content="/img/website-logo.png">
+  <meta property="og:locale" content="zh-Hans">
+  
+  <meta property="og:updated_time" content="2019-04-02T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>数据 * 分析 &#43; R</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/zh">数据 * 分析 &#43; R</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/zh/#about" data-target="#about">
+            
+            <span>家</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/zh/#projects" data-target="#projects">
+            
+            <span>项目</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/zh/#publications_selected" data-target="#publications_selected">
+            
+            <span>出版物</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/zh/#posts" data-target="#posts">
+            
+            <span>帖子</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/zh/#contact" data-target="#contact">
+            
+            <span>联系</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>中文 (简体)</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/" data-target="/">
+                <span>English</span>
+              </a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/pt/" data-target="/pt/">
+                <span>Português</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+  
+
+
+
+
+
+  
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      <img class="portrait" src="/img/profile.jpg" itemprop="image" alt="Avatar">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">丹尼尔马塞利诺</h2>
+        <h3 itemprop="jobTitle">数据/政治科学家</h3>
+
+        
+        
+
+        
+      </div>
+
+      <link itemprop="url" href="/">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        <li>
+          <a itemprop="sameAs" href="mailto:dmarcelino@live.com" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://twitter.com/dmarcelinobr" target="_blank" rel="noopener">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.instagram.com/dmarcelinobr" target="_blank" rel="noopener">
+            <i class="fab fa-instagram big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://linkedin.com/in/daniel-marcelino-80968656" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.researchgate.net/profile/Daniel_Marcelino" target="_blank" rel="noopener">
+            <i class="fab fa-researchgate big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://orcid.org/0000-0001-6432-407X" target="_blank" rel="noopener">
+            <i class="ai ai-orcid big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/danielmarcelino" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://stackoverflow.com/users/792000/daniel" target="_blank" rel="noopener">
+            <i class="fab fa-stack-overflow big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8" itemprop="description">
+
+    
+
+<h1 id="biography">Biography</h1>
+
+<p>I&rsquo;m a data/political scientist with extensive knowledge of R, Python, SQL, and reactive programming. I completed a Master degree in Comparative Studies with emphasis in political science and quantitative methods at <a href="http://unb.br/" target="_blank">University of Brasilia</a>. My professional interests lie on the interface of social behavior, big data, and informatics (aka. computational social science). In particular, I&rsquo;m interested in public opinion and voting, multi-agent systems and data-driven policy making.</p>
+
+<p>I love long walks, biking, and above all else, coding. I currently live in Brasilia, Brazil, with <a href="https://www.linkedin.com/in/mariana-oliveira-0a37b8125/" target="_blank">Mariana</a> and our little <a href="https://www.instagram.com/theodoro.moliveira/?hl=en" target="_blank">Theo</a>.</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>兴趣爱好</h3>
+        <ul class="ul-interests">
+          
+          <li>Elections</li>
+          
+          <li>Public Opinion</li>
+          
+          <li>Big/Smart Data</li>
+          
+          <li>Civic Technology</li>
+          
+          <li>R and Python Programming</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>教育经历</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Political Sciences, to finish</p>
+              <p class="institution">University of Montreal</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Master in Comparative Studies, 2010</p>
+              <p class="institution">University of Brasilia</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc in Social Sciences, 2006</p>
+              <p class="institution">Federal University of Parana</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="experience" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                January 2017 –
+                
+                  January 2019
+                
+                
+              </div>
+              <div class="text-right">Curitiba, PR</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Technical Advisor</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://curitiba.pr.gov.br" target="_blank" rel="noopener">Municipal Government of Curitiba</a></h4>
+            <div class="card-text"><p>Advise the Mayor and the cabinet of the Secretary for Sports, Recreation, and Youth on strategic planning, promotion, and evaluation of the municipal policy.  Also to assist the municipal administration to interpret and to develop a variety of policy monitoring indicators.</p>
+
+<p>Responsibilities include:</p>
+
+<ul>
+<li>Lead a research team focused in implementing a data-driven policy evaluation and monitoring culture</li>
+<li>Prepare technical reports and presentations</li>
+<li>Design and analyze surveys results</li>
+<li>Oversee development and maintenance of various database systems for the purpose of maintaining a participant&rsquo;s history
+<br /></li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                February 2015 –
+                
+                  April 2017
+                
+                
+              </div>
+              <div class="text-right">Brasilia, DF</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://ipea.gov.br" target="_blank" rel="noopener">Institute for Applied Economic Research (IPEA)</a></h4>
+            <div class="card-text"><p>Assist the principal researcher with articulation and management of  research projects and field-works. Also, to produce statistics, indicators, and  bibliographic reviews.</p>
+
+<p>Responsibilities include:</p>
+
+<ul>
+<li>Design and analyze national sample surveys</li>
+<li>Prepare and develop scripts for analysis and automated reports</li>
+<li>Create R and SQL scripts to read various databases</li>
+<li>Prepare technical reports and presentations</li>
+<li>Collect data using a semi-structured interviews with government officials
+<br /></li>
+</ul>
+
+<p>Selected projects:</p>
+
+<ul>
+<li>Perfil das Comunidades Terapêuticas Brasileiras</li>
+<li>Interiorização e dimensionamento da força de trabalho do MPT
+<br /></li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border exp-fill">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                January 2015 –
+                
+                  现在
+                
+                
+              </div>
+              <div class="text-right">Kansas City, KS</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Statistical Consultant</h4>
+            <h4 class="card-title exp-company text-muted my-0">Jake Thompson Consulting</h4>
+            <div class="card-text">Selected projects:</p>
+
+<ul>
+<li><a href="https://www.datacamp.com/courses/bayesian-regression-modeling-with-rstanarm" target="_blank">Bayesian Regression Modeling with rstanarm</a>, a DataCamp course</li>
+<li>Data analysis for research labs the University of Kansas Medical Center</li>
+<li>Development of white paper on the implementation of evidence centered design for the National Council of State Boards of Nursing
+<br /></li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                January 2012 –
+                
+                  December 2013
+                
+                
+              </div>
+              <div class="text-right">Montreal, QC</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://umontreal.ca" target="_blank" rel="noopener">University of Montreal</a></h4>
+            <div class="card-text">Responsibilities include:</p>
+
+<ul>
+<li>Create R script to score technology enhanced items</li>
+<li>Create and maintain databases of survey results</li>
+<li>Work with content experts and educators to develop content standards and a new alternate assessment for science
+<br /></li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                February 2008 –
+                
+                  December 2010
+                
+                
+              </div>
+              <div class="text-right">Brasilia, DF</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://unb.br" target="_blank" rel="noopener">University of Brasilia</a></h4>
+            <div class="card-text">Responsibilities include:</p>
+
+<ul>
+<li>Design and analyze survey data</li>
+<li>Construct and analyzing electoral databases</li>
+<li>Delivery analysis reports about the performance of government policies</li>
+<li>Produce research reports for dissemination
+<br /></li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Selected Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent Publications</h1>
+    
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="talks" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    
+    
+
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="posts" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+
+    <h1>Recent Posts</h1>
+    
+    
+
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+
+      
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul" itemscope>
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a href="mailto:dmarcelino@live.com">dmarcelino@live.com</a></span>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
+        <span><a href="skype:d.marcelino?call">d.marcelino</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fab fa-telegram fa-2x" aria-hidden="true"></i>
+        <span><a href="https://telegram.me/dmarcelino" target="_blank" rel="noopener">@dmarcelino</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">Brasilia, DF</span>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 Daniel Marcelino &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Java.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+    <script src="/js/external-link.js"></script>
+    
+
+  </body>
+</html>
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>politics on Data * Analysis &#43; R</title>
+    <link>/tags/politics/</link>
+    <description>Recent content in politics on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/politics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bolsonaro&#39;s First Job Approval Ratings</title>
+      <link>/post/2019-02-26-presidential-job-approval-ratings/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-02-26-presidential-job-approval-ratings/</guid>
+      <description>President Jair Bolsonaro&amp;rsquo;s job approval ratings average 39.5% during his first quarter in office so far.</description>
+    </item>
+    
+    <item>
+      <title>Will Brazil Goes to the Instant Runoff Election?</title>
+      <link>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
+      <description>Pundits have been asking themselves over the last days if the Brazilian far-right candidate would win the election in the primary runoff.</description>
+    </item>
+    
+    <item>
+      <title>Porque dinheiro importa: a dinâmica das contribuições eleitorais para o Congresso Nacional em 2002 e 2006</title>
+      <link>/publication/2010-porque-dinheiro-importa/</link>
+      <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
+      
+      <guid>/publication/2010-porque-dinheiro-importa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sobre dinheiro e eleições: um estudo dos gastos de campanha para o Congresso Nacional em 2002 e 2006</title>
+      <link>/publication/2010-sobre-dinheiro-e-eleicoes/</link>
+      <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
+      
+      <guid>/publication/2010-sobre-dinheiro-e-eleicoes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

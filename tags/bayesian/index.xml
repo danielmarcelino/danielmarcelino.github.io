@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bayesian on Data * Analysis &#43; R</title>
+    <link>/tags/bayesian/</link>
+    <description>Recent content in bayesian on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bayesian Ideal Points Estimation</title>
+      <link>/2019-04-08-bayesian-ideal-point-estimation/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019-04-08-bayesian-ideal-point-estimation/</guid>
+      <description>Packages you’ll need  First of all, make sure you’ve a working C++ compiler in your machine; you’ll need it for Stan/rstan to work.  # devtools::install_github(&amp;quot;dmarcelino/SenadoBR&amp;quot;) # devtools::install_github(&amp;quot;rmcelreath/rethinking&amp;quot;) library(readr) # pacakge for reading data library(rstan) # package for interacting with Stan (sampling over distributions) # library(rethinking) # package for interacting with Stan library(ggplot2) # package for plotting   Introduction This tutorial will use data from the brazilian Senate, and build a comparison between two approaches very widespread in the political science studies.</description>
+    </item>
+    
+    <item>
+      <title>When the Winner Comes Third: Simulating Candidates&#39; Winnability With Inaccurate Polls</title>
+      <link>/talk/2014-08-05-when-the-winner/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
+      
+      <guid>/talk/2014-08-05-when-the-winner/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

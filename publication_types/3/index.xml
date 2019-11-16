@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3 on Data * Analysis &#43; R</title>
+    <link>/publication_types/3/</link>
+    <description>Recent content in 3 on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Mon, 01 Nov 2010 00:00:00 -0200</lastBuildDate>
+    
+	<atom:link href="/publication_types/3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sobre dinheiro e eleições: um estudo dos gastos de campanha para o Congresso Nacional em 2002 e 2006</title>
+      <link>/publication/2010-sobre-dinheiro-e-eleicoes/</link>
+      <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
+      
+      <guid>/publication/2010-sobre-dinheiro-e-eleicoes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,221 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dados * Análise &#43; R on Dados * Análise &#43; R</title>
+    <link>/pt/</link>
+    <description>Recent content in Dados * Análise &#43; R on Dados * Análise &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/pt/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Be the Best at What Matters Most in Versioning Control</title>
+      <link>/pt/2019-04-04-what-matters-most-in-versioning/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/pt/2019-04-04-what-matters-most-in-versioning/</guid>
+      <description>
+
+
+&lt;div id=&#34;motivation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;I began to work on some shared repositories with three novice students of R and Github workflow. I’ve noticed they are very enthusiasts with R/Rstudio coding, but they simply don’t have much waist play of versioning control tools.&lt;/p&gt;
+&lt;p&gt;When I was learning and aspiring to move my repositories from a centralized system called Subversion (SVN) to Github (Git)–a system that allows multiple repositories–,&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; I found myself reading several guides on Internet, including those graphical ones, hoping to memorizing every Git command line trick.&lt;/p&gt;
+&lt;p&gt;In a decade or less, Git has surpassed others code management systems and became the new norm.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; That’s why learning it is relevant. However, I’ve realized that for 99% of the work I actually do, I’d have needed to get hang of only very few commands. So I decide to write them down as they may be helpful to others as well.&lt;/p&gt;
+&lt;div id=&#34;find-the-version-of-git&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Find the version of Git&lt;/h4&gt;
+&lt;p&gt;Run &lt;code&gt;git --version&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new Git repository&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the folder of the project.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run &lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;clone-an-existing-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Clone an existing Git repository&lt;/h4&gt;
+&lt;p&gt;Cloning is the process of pulling down a copy of a repository stored on a server.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the parent folder of where you want to repository’s folder to be in.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git clone [url to repository&#39;s git file] [name of folder / repository you want]&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;check-the-status-of-a-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Check the status of a Git repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-a-file-named-readme.md&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track a file named &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add README.md&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-a-whole-folder-named-script&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track a whole folder named &lt;code&gt;script&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add scripts/&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-and-stage-all-files-and-subfolders-in-a-directory&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track (and stage) all files and subfolders in a directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add -A&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;make-a-commit&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Make a commit&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git commit --m &#34;my changes commit&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-all-branches&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View all branches&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-branch&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new branch&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch new_model&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;switch-to-a-branch&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Switch to a branch&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git checkout new_model&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-branch-and-switch-to-it&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new branch and switch to it&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git checkout -b new_ux&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;merge-one-branch-into-another&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Merge one branch into another&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Switch to the branch you want to pull changes into: &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pull changes from another branch into your branch: &lt;code&gt;git merge new_ux&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-a-remote-github-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set a remote Github repository&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to GitHub.com and create a new repository.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Set that repository’s url as the origin repo: &lt;code&gt;git remote add origin https://github.com/danielmarcelino/myfiles.git&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;push-master-branch-to-a-github-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Push master branch to a Github repository&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;-u&lt;/code&gt; sets the origin as the default for this branch&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pull-down-from-branch-from-github-repository-to-local-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Pull down from branch from GitHub repository to local repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pull-down-all-branches-from-github&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Pull down all branches from GitHub&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git fetch origin&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-all-remote-branches&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View all remote branches&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch --remote&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-log&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View log&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-unstagged-changes-to-files&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View unstagged changes to files&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unstage-a-file&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Unstage a file&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset filename&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;undo-last-commit-move-commits-changes-to-staging&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Undo last commit, move commits changes to staging&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset --soft HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;undo-last-commit-remove-all-changes-in-your-working-directory&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Undo last commit, remove all changes in your working directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset --hard HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;clone-a-remote-repository-locally&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Clone a remote repository locally&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git clone url&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;show-changes-from-a-particular-commit&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Show changes from a particular commit&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git show --pretty=&#34;format:&#34; &amp;lt;commit ID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;revert-a-commit-by-creating-a-new-commit-with-opposite-changes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Revert a commit by creating a new commit with opposite changes&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git revert &amp;lt;commit ID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;To be even more precise, it’s a central repository with a series of local repositories.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014&#34; class=&#34;uri&#34;&gt;https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Estimação Bayesiana de Pontos Ideais</title>
+      <link>/pt/2019-04-08-bayesian-ideal-point-estimation/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/pt/2019-04-08-bayesian-ideal-point-estimation/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/pt/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/pt/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ciência de Dados e Sociedade: O Pacote SciencesPo</title>
+      <link>/pt/talk/2016-11-16-data-sciences-and-society/</link>
+      <pubDate>Wed, 16 Nov 2016 00:00:00 -0200</pubDate>
+      
+      <guid>/pt/talk/2016-11-16-data-sciences-and-society/</guid>
+      <description>&lt;p&gt;Esta é uma parte da apresentação no Seminário &lt;em&gt;Ciência de Dados e Sociedade&lt;/em&gt;, organizado pelo IBPAD e o Núcleo de Estudos e Pesquisa em Políticas Públicas, Governo e Gestão (NP3-UnB).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Síntese do Survey das Comunidades Terapêuticas</title>
+      <link>/pt/talk/2016-06-07-survey-therapeutic-communities/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
+      
+      <guid>/pt/talk/2016-06-07-survey-therapeutic-communities/</guid>
+      <description>&lt;p&gt;A seguir alguns recusos adicionais para quem estiver interessado em obter mais informações sobre os resultados dessa pesquisa.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- [*Comunidades terapêuticas e a disputa entre modelos de atenção e cuidado a usuários de droga*](http://repositorio.ipea.gov.br/bitstream/11058/8883/3/ComunTerapDrogas.pdf)
+- [*Comunidades terapêuticas: temas para reflexão*](http://www.ipea.gov.br/portal/images/stories/PDFs/livros/livros/190103_comunidades_terapeuticas.pdf).
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tutorial de Uso do R Selenium</title>
+      <link>/pt/talk/2015-06-07-tutorial-r-selenium/</link>
+      <pubDate>Sun, 07 Jun 2015 00:00:00 -0300</pubDate>
+      
+      <guid>/pt/talk/2015-06-07-tutorial-r-selenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eleição Presidencial de 2014</title>
+      <link>/pt/talk/2014-05-13-presidential-election/</link>
+      <pubDate>Tue, 13 May 2014 00:00:00 -0300</pubDate>
+      
+      <guid>/pt/talk/2014-05-13-presidential-election/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

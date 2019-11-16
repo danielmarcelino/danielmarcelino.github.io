@@ -1,0 +1,1430 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="author" content="Daniel Marcelino">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Daniel Marcelino&#39;s blog. This is where I try to put some of my ideas and projects in order.">
+
+  
+  <link rel="alternate" hreflang="en" href="/">
+  
+  <link rel="alternate" hreflang="zh" href="/zh/">
+  
+  <link rel="alternate" hreflang="pt-BR" href="/pt/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#E31837">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/pt/styles.css">
+  
+  <link rel="stylesheet" href="/css/chiefs-css.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24186657-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="/pt/index.xml" type="application/rss+xml" title="Dados * Análise &#43; R">
+  <link rel="feed" href="/pt/index.xml" type="application/rss+xml" title="Dados * Análise &#43; R">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/pt/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@dmarcelinobr">
+  <meta property="twitter:creator" content="@dmarcelinobr">
+  
+  <meta property="og:site_name" content="Dados * Análise &#43; R">
+  <meta property="og:url" content="/pt/">
+  <meta property="og:title" content="Dados * Análise &#43; R">
+  <meta property="og:description" content="Daniel Marcelino&#39;s blog. This is where I try to put some of my ideas and projects in order."><meta property="og:image" content="/img/website-logo.png">
+  <meta property="og:locale" content="pt-BR">
+  
+  <meta property="og:updated_time" content="2019-04-03T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Dados * Análise &#43; R</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/pt">Dados * Análise &#43; R</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#about" data-target="#about">
+            
+            <span>Inicial</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#projects" data-target="#projects">
+            
+            <span>Projetos</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#publications_selected" data-target="#publications_selected">
+            
+            <span>Publicações</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#posts" data-target="#posts">
+            
+            <span>Postagens</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#contact" data-target="#contact">
+            
+            <span>Contato</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>Português</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/" data-target="/">
+                <span>English</span>
+              </a>
+            </li>
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/zh/" data-target="/zh/">
+                <span>中文 (简体)</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<span id="homepage" style="display: none"></span>
+
+
+  
+
+
+
+
+
+  
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
+  <div class="col-12 col-lg-4">
+    <div id="profile">
+
+      
+      <img class="portrait" src="/img/profile.jpg" itemprop="image" alt="Avatar">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">Daniel Marcelino</h2>
+        <h3 itemprop="jobTitle">Cientista de Dados</h3>
+
+        
+        
+
+        
+      </div>
+
+      <link itemprop="url" href="/">
+
+      <ul class="network-icon" aria-hidden="true">
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+        <li>
+          <a itemprop="sameAs" href="mailto:dmarcelino@live.com" >
+            <i class="fas fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://twitter.com/dmarcelinobr" target="_blank" rel="noopener">
+            <i class="fab fa-twitter big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.instagram.com/dmarcelinobr" target="_blank" rel="noopener">
+            <i class="fab fa-instagram big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://linkedin.com/in/daniel-marcelino-80968656" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.researchgate.net/profile/Daniel_Marcelino" target="_blank" rel="noopener">
+            <i class="fab fa-researchgate big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://orcid.org/0000-0001-6432-407X" target="_blank" rel="noopener">
+            <i class="ai ai-orcid big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://github.com/danielmarcelino" target="_blank" rel="noopener">
+            <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://stackoverflow.com/users/792000/daniel" target="_blank" rel="noopener">
+            <i class="fab fa-stack-overflow big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-12 col-lg-8" itemprop="description">
+
+    
+
+<h1 id="biography">Biography</h1>
+
+<p>I&rsquo;m a data/political scientist with extensive knowledge of R, Python, SQL, and reactive programming. I completed a Master degree in Comparative Studies with emphasis in political science and quantitative methods at <a href="http://unb.br/" target="_blank">University of Brasilia</a>. My professional interests lie on the interface of social behavior, big data, and informatics (aka. computational social science). In particular, I&rsquo;m interested in public opinion and voting, multi-agent systems and data-driven policy making.</p>
+
+<p>I love long walks, biking, and above all else, coding. I currently live in Brasilia, Brazil, with <a href="https://www.linkedin.com/in/mariana-oliveira-0a37b8125/" target="_blank">Mariana</a> and our little <a href="https://www.instagram.com/theodoro.moliveira/?hl=en" target="_blank">Theo</a>.</p>
+
+
+    <div class="row">
+
+      
+      <div class="col-md-5">
+        <h3>Interesses</h3>
+        <ul class="ul-interests">
+          
+          <li>Eleições</li>
+          
+          <li>Opinião Pública</li>
+          
+          <li>Big/Smart Data</li>
+          
+          <li>Novas formas de participação</li>
+          
+          <li>Programação em R e Python</li>
+          
+        </ul>
+      </div>
+      
+
+      
+      <div class="col-md-7">
+        <h3>Formação</h3>
+        <ul class="ul-edu fa-ul">
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">PhD in Political Sciences, to finish</p>
+              <p class="institution">University of Montreal</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">Master in Comparative Studies, 2010</p>
+              <p class="institution">University of Brasilia</p>
+            </div>
+          </li>
+          
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">BSc in Social Sciences, 2006</p>
+              <p class="institution">Federal University of Parana</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="experience" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Experience</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+    
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                January 2017 –
+                
+                  January 2019
+                
+                
+              </div>
+              <div class="text-right">Curitiba, PR</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Technical Advisor</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://curitiba.pr.gov.br" target="_blank" rel="noopener">Municipal Government of Curitiba</a></h4>
+            <div class="card-text"><p>Advise the Mayor and the cabinet of the Secretary for Sports, Recreation, and Youth on strategic planning, promotion, and evaluation of the municipal policy.  Also to assist the municipal administration to interpret and to develop a variety of policy monitoring indicators.</p>
+
+<p>Responsibilities include:</p>
+
+<ul>
+<li>Lead a research team focused in implementing a data-driven policy evaluation and monitoring culture</li>
+<li>Prepare technical reports and presentations</li>
+<li>Design and analyze surveys results</li>
+<li>Oversee development and maintenance of various database systems for the purpose of maintaining a participant&rsquo;s history
+<br /></li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                February 2015 –
+                
+                  April 2017
+                
+                
+              </div>
+              <div class="text-right">Brasilia, DF</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://ipea.gov.br" target="_blank" rel="noopener">Institute for Applied Economic Research (IPEA)</a></h4>
+            <div class="card-text"><p>Assist the principal researcher with articulation and management of  research projects and field-works. Also, to produce statistics, indicators, and  bibliographic reviews.</p>
+
+<p>Responsibilities include:</p>
+
+<ul>
+<li>Design and analyze national sample surveys</li>
+<li>Prepare and develop scripts for analysis and automated reports</li>
+<li>Create R and SQL scripts to read various databases</li>
+<li>Prepare technical reports and presentations</li>
+<li>Collect data using a semi-structured interviews with government officials
+<br /></li>
+</ul>
+
+<p>Selected projects:</p>
+
+<ul>
+<li>Perfil das Comunidades Terapêuticas Brasileiras</li>
+<li>Interiorização e dimensionamento da força de trabalho do MPT
+<br /></li>
+</ul>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                January 2012 –
+                
+                  December 2013
+                
+                
+              </div>
+              <div class="text-right">Montreal, QC</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://umontreal.ca" target="_blank" rel="noopener">University of Montreal</a></h4>
+            <div class="card-text">Responsibilities include:</p>
+
+<ul>
+<li>Create R script to score technology enhanced items</li>
+<li>Create and maintain databases of survey results</li>
+<li>Work with content experts and educators to develop content standards and a new alternate assessment for science
+<br /></li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row experience">
+      
+      <div class="col-auto text-center flex-column d-none d-sm-flex">
+        <div class="row h-50">
+          <div class="col border-right">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+        <div class="m-2">
+          <span class="badge badge-pill border ">&nbsp;</span>
+        </div>
+        <div class="row h-50">
+          <div class="col ">&nbsp;</div>
+          <div class="col">&nbsp;</div>
+        </div>
+      </div>
+      
+      <div class="col py-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="float-right text-muted exp-meta">
+              <div>
+                February 2008 –
+                
+                  December 2010
+                
+                
+              </div>
+              <div class="text-right">Brasilia, DF</div>
+              
+            </div>
+            <h4 class="card-title exp-title text-muted mt-0 mb-1">Graduate Research Assistant</h4>
+            <h4 class="card-title exp-company text-muted my-0"><a href="http://unb.br" target="_blank" rel="noopener">University of Brasilia</a></h4>
+            <div class="card-text">Responsibilities include:</p>
+
+<ul>
+<li>Design and analyze survey data</li>
+<li>Construct and analyzing electoral databases</li>
+<li>Delivery analysis reports about the performance of government policies</li>
+<li>Produce research reports for dissemination
+<br /></li>
+</ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications_selected" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Selected Publications</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="publications" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent Publications</h1>
+    
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+      
+    
+
+    
+
+    
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="talks" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
+    
+    <p class="view-all">
+      <a href="/pt/talk/">
+        Mais Palestras
+        <i class="fas fa-angle-double-right"></i>
+      </a>
+    </p>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    
+    
+
+    
+      
+        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/pt/talk/2016-11-16-data-sciences-and-society/" itemprop="url">Ciência de Dados e Sociedade: O Pacote SciencesPo</a>
+    </h3>
+
+    
+    
+    
+
+    <div class="stream-meta article-metadata">
+      <div>
+        
+        November 16, 2016
+        
+          19:30
+          
+            &mdash; 22:00
+          
+        
+
+        
+          <span class="middot-divider"></span> Ciência de Dados e Sociedade
+        
+      </div>
+      <div itemprop="author">
+        Daniel Marcelino</div>
+    </div>
+
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.ibpad.com.br/blog/analise-de-dados/assista-palestra-completa-de-daniel-marcelino-sobre-o-pacote-sciencespo-para-r/" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.youtube.com/watch?v=oCYWNQ6e4LQ&amp;feature=youtu.be" target="_blank" rel="noopener">
+  Vídeo
+</a>
+
+
+
+
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pt/talk/2016-11-16-data-sciences-and-society/">
+      <img src="/pt/talk/2016-11-16-data-sciences-and-society/featured_hu7b60e11bed231886237b316c6bdbbe8d_236987_150x0_resize_box_2.png" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/pt/talk/2016-06-07-survey-therapeutic-communities/" itemprop="url">Síntese do Survey das Comunidades Terapêuticas</a>
+    </h3>
+
+    
+    
+      
+    
+    
+    <div class="article-style" itemprop="articleBody">
+      Desde 2011, por força das determinações do Plano “Crack: é possível vencer”,  o Governo Federal, através da Secretaria Nacional de …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+      <div>
+        
+        June 7, 2016
+        
+          14:30
+          
+        
+
+        
+          <span class="middot-divider"></span> Apresentação dos Resultados da Pesquisa Perfil das Comunidades Terapêuticas Brasileiras - Seminário do IPEA
+        
+      </div>
+      <div itemprop="author">
+        Maria Paula Santos, Daniel Marcelino</div>
+    </div>
+
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pt/talk/2016-06-07-survey-therapeutic-communities/">
+      <img src="/pt/talk/2016-06-07-survey-therapeutic-communities/featured_hu9a1ded5f4db573c9c2566cfd820f42fd_450022_150x0_resize_box_2.png" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        <div class="media stream-item" itemscope itemtype="http://schema.org/Event">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0" itemprop="name">
+      <a href="/pt/talk/2015-06-07-tutorial-r-selenium/" itemprop="url">Tutorial de Uso do R Selenium</a>
+    </h3>
+
+    
+    
+      
+    
+    
+    <div class="article-style" itemprop="articleBody">
+      O Selenium é um conjunto de ferramentas Web que nos permite automatizar as ações do navegador. RSelenium é um pacote R que nos permite …
+    </div>
+    
+
+    <div class="stream-meta article-metadata">
+      <div>
+        
+        June 7, 2015
+        
+          14:45
+          
+        
+
+        
+          <span class="middot-divider"></span> Seminário de Métodos do IPEA (Instituto de Pesquisa Econômica Aplicada)
+        
+      </div>
+      <div itemprop="author">
+        Daniel Marcelino</div>
+    </div>
+
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+  
+    
+  
+
+
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/slides/2015-Tutorial-R-Selenium.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://gist.githubusercontent.com/danielmarcelino/796aa9a3df6c88bf57fb9712daddcfdc/raw/4e69263ddac879fd4f5a71525c6ced1c836cc67e/2015-Tutorial-R-Selenium.R" target="_blank" rel="noopener">
+  Código
+</a>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.slideshare.net/danielmarcelino796/tutorial-de-uso-do-r-selenium" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/pt/talk/2015-06-07-tutorial-r-selenium/">
+      <img src="/pt/talk/2015-06-07-tutorial-r-selenium/featured_hud65429b73e204a85845c8cb4403d5918_114877_150x0_resize_box_2.png" itemprop="image">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="posts" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-12 col-lg-4 section-heading">
+
+    <h1>Recent Posts</h1>
+    
+    
+
+  </div>
+  <div class="col-12 col-lg-8">
+
+    
+
+    
+      
+
+      
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+  
+  
+  
+  <section id="contact" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row contact-widget">
+  <div class="col-12 col-lg-4 section-heading">
+    <h1>Contact</h1>
+    
+  </div>
+  <div class="col-12 col-lg-8">
+    
+
+    
+
+    <ul class="fa-ul" itemscope>
+
+      
+      <li>
+        <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
+        <span id="person-email" itemprop="email"><a href="mailto:dmarcelino@live.com">dmarcelino@live.com</a></span>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
+        <span><a href="skype:d.marcelino?call">d.marcelino</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fab fa-telegram fa-2x" aria-hidden="true"></i>
+        <span><a href="https://telegram.me/dmarcelino" target="_blank" rel="noopener">@dmarcelino</a></span>
+      </li>
+      
+
+      
+      <li>
+        <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
+        <span id="person-address" itemprop="address">Brasilia, DF</span>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+  
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 Daniel Marcelino &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Java.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+    <script src="/js/external-link.js"></script>
+    
+
+  </body>
+</html>
+
+

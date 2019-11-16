@@ -1,0 +1,12 @@
+---
+title: "Doing Data Science with Missing Data"
+author: "Daniel Marcelino"
+date: "3/22/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+https://www.nytimes.com/2016/10/13/upshot/how-one-19-year-old-illinois-man-is-distorting-national-polling-averages.html

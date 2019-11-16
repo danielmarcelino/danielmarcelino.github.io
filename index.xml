@@ -1,0 +1,615 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data * Analysis &#43; R on Data * Analysis &#43; R</title>
+    <link>/</link>
+    <description>Recent content in Data * Analysis &#43; R on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>An R Little Secret! How could I live without it?</title>
+      <link>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</guid>
+      <description>
+
+
+&lt;p&gt;For many years I’ve been coding using &lt;code&gt;dplyr&lt;/code&gt; functions and always get annoyde with conflict fuctions issues. Especially those of heavy usage functions as the &lt;code&gt;select()&lt;/code&gt;, &lt;code&gt;filter()&lt;/code&gt;, and &lt;code&gt;lag()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;── Conflicts ─────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To guarantee that I will always execute the right functions, I usually write them explicitly, informing the package then the desired function name: &lt;code&gt;dplyr::select()&lt;/code&gt;. Years of R programming experience tells me going down this rule and I’ll be always on the safe side.&lt;/p&gt;
+&lt;p&gt;However, I never realized that one thing I could have used is simply pass the function explicitly as a variable: &lt;code&gt;select &amp;lt;- dplyr::select&lt;/code&gt;. This sounds obvious now, but if I had dared to try this “coding style” before, it could have saved me a lot of repetition in my data manipulation scripts. See this in context:&lt;/p&gt;
+&lt;div id=&#34;set-the-most-frequent-usage-as-a-variable&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set the most frequent usage as a variable&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+
+select &amp;lt;- dplyr::select&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;then-use-it-as-you-whish&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Then use it as you whish&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+mtcars %&amp;gt;% select(mpg, disp) %&amp;gt;% head()
+#&amp;gt;                    mpg disp
+#&amp;gt; Mazda RX4         21.0  160
+#&amp;gt; Mazda RX4 Wag     21.0  160
+#&amp;gt; Datsun 710        22.8  108
+#&amp;gt; Hornet 4 Drive    21.4  258
+#&amp;gt; Hornet Sportabout 18.7  360
+#&amp;gt; Valiant           18.1  225&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Be the Best at What Matters Most in Versioning Control</title>
+      <link>/2019-04-04-what-matters-most-in-versioning/</link>
+      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019-04-04-what-matters-most-in-versioning/</guid>
+      <description>
+
+
+&lt;div id=&#34;motivation&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;I began to work on some shared repositories with three novice students of R and Github workflow. I’ve noticed they are very enthusiasts with R/Rstudio coding, but they simply don’t have much waist play of versioning control tools.&lt;/p&gt;
+&lt;p&gt;When I was learning and aspiring to move my repositories from a centralized system called Subversion (SVN) to Github (Git)–a system that allows multiple repositories–,&lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt; I found myself reading several guides on Internet, including those graphical ones, hoping to memorizing every Git command line trick.&lt;/p&gt;
+&lt;p&gt;In a decade or less, Git has surpassed others code management systems and became the new norm.&lt;a href=&#34;#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt; That’s why learning it is relevant. However, I’ve realized that for 99% of the work I actually do, I’d have needed to get hang of only very few commands. So I decide to write them down as they may be helpful to others as well.&lt;/p&gt;
+&lt;div id=&#34;find-the-version-of-git&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Find the version of Git&lt;/h4&gt;
+&lt;p&gt;Run &lt;code&gt;git --version&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new Git repository&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the folder of the project.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run &lt;code&gt;git init&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;clone-an-existing-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Clone an existing Git repository&lt;/h4&gt;
+&lt;p&gt;Cloning is the process of pulling down a copy of a repository stored on a server.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to the parent folder of where you want to repository’s folder to be in.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git clone [url to repository&#39;s git file] [name of folder / repository you want]&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;check-the-status-of-a-git-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Check the status of a Git repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git status&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-a-file-named-readme.md&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track a file named &lt;code&gt;README.md&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add README.md&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-a-whole-folder-named-script&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track a whole folder named &lt;code&gt;script&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add scripts/&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;tell-git-to-track-and-stage-all-files-and-subfolders-in-a-directory&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Tell Git to track (and stage) all files and subfolders in a directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git add -A&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;make-a-commit&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Make a commit&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git commit --m &#34;my changes commit&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-all-branches&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View all branches&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-branch&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new branch&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch new_model&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;switch-to-a-branch&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Switch to a branch&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git checkout new_model&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-a-new-branch-and-switch-to-it&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Create a new branch and switch to it&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git checkout -b new_ux&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;merge-one-branch-into-another&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Merge one branch into another&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Switch to the branch you want to pull changes into: &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Pull changes from another branch into your branch: &lt;code&gt;git merge new_ux&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-a-remote-github-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set a remote Github repository&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Go to GitHub.com and create a new repository.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Set that repository’s url as the origin repo: &lt;code&gt;git remote add origin https://github.com/danielmarcelino/myfiles.git&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;push-master-branch-to-a-github-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Push master branch to a Github repository&lt;/h4&gt;
+&lt;p&gt;The &lt;code&gt;-u&lt;/code&gt; sets the origin as the default for this branch&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push -u origin master&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pull-down-from-branch-from-github-repository-to-local-repository&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Pull down from branch from GitHub repository to local repository&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;pull-down-all-branches-from-github&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Pull down all branches from GitHub&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git fetch origin&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-all-remote-branches&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View all remote branches&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git branch --remote&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-log&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View log&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;view-unstagged-changes-to-files&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;View unstagged changes to files&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git diff&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;unstage-a-file&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Unstage a file&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset filename&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;undo-last-commit-move-commits-changes-to-staging&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Undo last commit, move commits changes to staging&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset --soft HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;undo-last-commit-remove-all-changes-in-your-working-directory&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Undo last commit, remove all changes in your working directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git reset --hard HEAD^&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;clone-a-remote-repository-locally&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Clone a remote repository locally&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git clone url&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;git-tags&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Git tags&lt;/h4&gt;
+&lt;p&gt;Tags in Git can be used to add a version number. Every new commit after this will auto incremented by appending commit number and hash to the tag. The tag must follow the pattern of &lt;code&gt;X.Y.Z or&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git tag -a &#34;v1.5.0-beta&#34; -m &#34;version v1.5.0-beta&#34;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;show-changes-from-a-particular-commit&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Show changes from a particular commit&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git show --pretty=&#34;format:&#34; &amp;lt;commit ID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git show v1.5.0-beta&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;revert-a-commit-by-creating-a-new-commit-with-opposite-changes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Revert a commit by creating a new commit with opposite changes&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;git revert &amp;lt;commit ID&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;To be even more precise, it’s a central repository with a series of local repositories.&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014&#34; class=&#34;uri&#34;&gt;https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014&lt;/a&gt;&lt;a href=&#34;#fnref2&#34; class=&#34;footnote-back&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Ideal Points Estimation</title>
+      <link>/2019-04-08-bayesian-ideal-point-estimation/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019-04-08-bayesian-ideal-point-estimation/</guid>
+      <description>
+
+
+&lt;div id=&#34;packages-youll-need&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Packages you’ll need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First of all, make sure you’ve a working C++ compiler in your machine; you’ll need it for Stan/rstan to work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# devtools::install_github(&amp;quot;dmarcelino/SenadoBR&amp;quot;)
+# devtools::install_github(&amp;quot;rmcelreath/rethinking&amp;quot;)
+library(readr) # pacakge for reading data 
+library(rstan) # package for interacting with Stan (sampling over distributions) 
+# library(rethinking) # package for interacting with Stan
+library(ggplot2) # package for plotting &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This tutorial will use data from the brazilian Senate, and build a comparison between two approaches very widespread in the political science studies. Namely, the&lt;/p&gt;
+&lt;p&gt;y_{ij} = x_i - _j,&lt;/p&gt;
+&lt;p&gt;where yij
+is our data matrix of observed votes (1=yes, 0=no, absent); xi
+are the legislator ideal points, and βj
+and αj
+are the discrimination and difficulty parameters, respectively (slope and intercept). See Clinton, Jackman &amp;amp; Rivers (2004) for more details.&lt;/p&gt;
+&lt;p&gt;First, we’ll load the packages and import the data from my github repo using read_csv, which is roll-call data from the 53rd legislature of the Brazilian Federal Senate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The data&lt;/h2&gt;
+&lt;p&gt;First, we’ll load the packages and import the data from my github repo using read_csv, which is roll-call data from the 53rd legislature of the Brazilian Federal Senate.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Extreme non-viable candidates and quota maneuvering in Brazilian legislative elections</title>
+      <link>/publication/2019-extreme-non-viable-candidates/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
+      
+      <guid>/publication/2019-extreme-non-viable-candidates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bolsonaro&#39;s First Job Approval Ratings</title>
+      <link>/post/2019-02-26-presidential-job-approval-ratings/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-02-26-presidential-job-approval-ratings/</guid>
+      <description>
+
+
+&lt;p&gt;President Jair Bolsonaro’s job approval ratings average 39.5% during his first quarter in office so far (from January through late February). Compared to the former presidents, for which I’ve estimates, his quarterly job approval ratings are above the overall average for the inauguration term (31%). However, his ratings trail quarterly averages of the Workers’ Party presidents, Lula I and II, and Dilma I.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;Quarter   President               % Approving
+--------  ---------------------  ------------
+  1987.2  José Sarney                   9.0
+  1990.2  Fernando Collor              36.0
+  1992.3  Itamar Franco                18.0
+  1995.1  Fernando Henrique I          39.0
+  1999.1  Fernando Henrique II         21.0
+  2003.1  Lula da Silva I              42.5
+  2007.1  Lula da Silva II             48.0
+  2011.1  Dilma Rousseff I             51.5
+  2015.1  Dilma Rousseff II            14.7
+  2016.2  Michel Temer                 19.4
+  2019.1  Jair Bolsonaro               39.5&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ANOVA Simplified Using R</title>
+      <link>/project/anova/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
+      
+      <guid>/project/anova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soccer Predictions Using Bayesian Mixed Effects Models</title>
+      <link>/project/soccer-predictions/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
+      
+      <guid>/project/soccer-predictions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading List Faster With parallel, doParallel, and pbapply</title>
+      <link>/post/2018-12-12-reading-list-faster/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-12-12-reading-list-faster/</guid>
+      <description>
+
+
+&lt;p&gt;I have several tables that I would like to load as a sole data frame. Derived functions from &lt;code&gt;read.table()&lt;/code&gt; have a lot of convenient features, but it seems like there is a lot of steps in the implementation that would slow things down. The gain in performance of reading 29 CSV files (about 2.2 GB) shows quite different picture. While the parallelization process does bring some improvement considering the ‘user time’, i.e. the CPU time charged for the process execution at the machine level, the ‘elapsed time’, i.e. the ‘real’ elapsed time since the process was started doesn’t show much difference. Let’s go through it.&lt;/p&gt;
+&lt;div id=&#34;data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Data&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;list_of_datasets &amp;lt;- list.files(pattern = &amp;quot;*.csv&amp;quot;)
+
+list_of_datasets&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;function&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Function&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(pbapply)
+library(parallel)
+library(doParallel)
+library(dplyr)
+
+
+#&amp;#39; Reads a list of datasets
+#&amp;#39; @param x A list of datasets (names of datasets are strings)
+#&amp;#39; @param func A function, the read function to use to read the data
+#&amp;#39; @param parallelize Parallelize the code
+#&amp;#39; @param ... Further arguments passed to func
+
+readListFaster &amp;lt;- function(x,  func, ..., parallelize = FALSE, rbind = FALSE){
+
+  stopifnot(length(x) &amp;gt; 0)
+
+  read_and_assign &amp;lt;- function(dataset, func){
+    dataset_name &amp;lt;- as.name(dataset)
+    dataset_name &amp;lt;- func(dataset, ...)
+  }
+
+  if (parallelize) {
+    message(&amp;quot;Reading in data in parallel&amp;quot;)
+    clusters &amp;lt;- parallel::detectCores() %&amp;gt;%
+      parallel::makeCluster()
+
+    doParallel::registerDoParallel(clusters)
+
+    output &amp;lt;- invisible( # invisible is used to suppress the unneeded output
+      pbapply::pblapply(x,
+                        read_and_assign,
+                        func = func,
+                        ...,
+                        cl = clusters)
+    )
+
+    parallel::stopCluster(clusters)
+
+  } else if (!parallelize) {
+    output &amp;lt;- invisible(
+      pbapply::pblapply(x,
+                        read_and_assign,
+                        func = func)
+    )
+  }
+
+  # Remove what&amp;#39;s after the &amp;quot;.&amp;quot; at the end of the data set names and what&amp;#39;s before any / for url files.
+  x &amp;lt;- stringr::str_replace_all(x,&amp;quot;.*/|\\..*&amp;quot;, &amp;quot;&amp;quot;)
+
+  names(output) &amp;lt;- x
+
+  if (rbind) {
+  rbindlist(mclapply(list_of_datasets, fread, mc.cores = detectCores()), fill=TRUE)
+    # dplyr::bind_rows(output)
+  } else {
+    output
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;results&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;div id=&#34;without-paralelize&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Without Paralelize&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;system.time(loaded_datasets1 &amp;lt;- readListFaster(list_of_datasets, 
+                                 func = read.csv2, 
+                                 parallelize=FALSE, 
+                                 rbind = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;with-paralelize&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;With Paralelize&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;system.time(loaded_datasets2 &amp;lt;- readListFaster(list_of_datasets, 
+                                 func = read.csv2, 
+                                 parallelize=TRUE, 
+                                 rbind = TRUE))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It’s important to realise that every bit of optimisation matters. But it would not help us if the outcome data frames were different, don’t you agree? Luckily all 174 million records do match.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+table(loaded_datasets1 == loaded_datasets2)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cartography and Spatial Analysis</title>
+      <link>/project/mapping/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/project/mapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Will Brazil Goes to the Instant Runoff Election?</title>
+      <link>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
+      <description>
+
+
+&lt;div id=&#34;alea-jacta-est&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Alea Jacta Est&lt;/h2&gt;
+&lt;p&gt;This is the very last analysis before the election. A far-right nationalist candidate, Jair Messias Bolsonaro, is leading the polls with about 40% of the intentions, while the runner up candidate, Fernando Haddad, of a leftist coalition has about 25%; all the others have 35% in total.&lt;/p&gt;
+&lt;p&gt;A very intriguing debate put forward in the press in the last days was if the next president would be elected right way in the primary election round. So, will the Bandwagon, shy Tory, and something else effect help electing the far-right nationalist candidate by the absolute-majority criterion vote? Following a similar strategy presented before &lt;a href=&#34;http://danielmarcelino.github.io/2014/bayes-says-dont-worry-about-scotlands-referendum.html&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;http://danielmarcelino.github.io/2014/frente-amplio-winnability.html&#34;&gt;here&lt;/a&gt;, Bayes says &lt;code&gt;don&#39;t worry&lt;/code&gt; about Bolsonaro’s victory by now.&lt;/p&gt;
+&lt;p&gt;Although polling houses are showing Bolsonaro’s support augmenting systematically over the last weeks, it’s fair to remember that pollsters did a very poor job in fielding the true vote share last elections. For instance, in 2014 the main polling firms mis-predicted both Dilma Rousseff’s and Aecio Neves’ true positions by saying Dilma was to win a majority with a margin, but the decision went to a instant runoff between these two candidates.&lt;/p&gt;
+&lt;p&gt;The following numbers represent the forecast with polling data made available over the last three days. Since there is a considerable number of swing voters in these polls, I did some math by distributing these undecideds before computing the final likely results. It’s a simplified simulation exercice as I do not account for time trends, house effects etc. I’m only accounting for the sample sizes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The data&lt;/h2&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;           Bolsonaro Haddad  Ciro Others Swing Wasting     N
+Datafolha      0.360  0.220 0.130  0.200 0.040   0.050 19552
+Ibope          0.360  0.220 0.110  0.180 0.050   0.080  3010
+MDA            0.367  0.240 0.099  0.155 0.060   0.078  2002
+Ipespe         0.360  0.220 0.110  0.290 0.020   0.000  2000
+VoxPopuli      0.340  0.270 0.110  0.130 0.070   0.080  2000
+ParanaPesq     0.349  0.218 0.094  0.171 0.046   0.120  1080&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;poll-of-polls&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Poll of polls&lt;/h2&gt;
+&lt;p&gt;Here is where the magic begins. I weigh polls so to reflect their sample sizes. The new results are shown in last line (7) of the table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(digits=3)
+
+wtd.polls &amp;lt;- rbind(data, c(apply(data[,1:6],2, weighted.mean, data$N), sum(data$N)))
+
+print(wtd.polls)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;           Bolsonaro Haddad  Ciro Others  Swing Wasting     N
+Datafolha      0.360  0.220 0.130  0.200 0.0400  0.0500 19552
+Ibope          0.360  0.220 0.110  0.180 0.0500  0.0800  3010
+MDA            0.367  0.240 0.099  0.155 0.0600  0.0780  2002
+Ipespe         0.360  0.220 0.110  0.290 0.0200  0.0000  2000
+VoxPopuli      0.340  0.270 0.110  0.130 0.0700  0.0800  2000
+ParanaPesq     0.349  0.218 0.094  0.171 0.0460  0.1200  1080
+7              0.359  0.225 0.122  0.195 0.0433  0.0561 29644&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adjusting-for-the-undecideds&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Adjusting for the undecideds&lt;/h2&gt;
+&lt;p&gt;Adjusting for swing voters, the new results are now the line (8) of the table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(digits=3)
+
+wtd.polls[8,] &amp;lt;- data.frame(wtd.polls[7,1:4] +
+                              wtd.polls[7,1:4] / 
+                              sum(wtd.polls[7,1:4]) * 
+                              wtd.polls[7,5], 
+                              Swing=0, 
+                              Wasting=wtd.polls[7,6], 
+                              N=wtd.polls[7,7])
+print(wtd.polls)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;           Bolsonaro Haddad  Ciro Others  Swing Wasting     N
+Datafolha      0.360  0.220 0.130  0.200 0.0400  0.0500 19552
+Ibope          0.360  0.220 0.110  0.180 0.0500  0.0800  3010
+MDA            0.367  0.240 0.099  0.155 0.0600  0.0780  2002
+Ipespe         0.360  0.220 0.110  0.290 0.0200  0.0000  2000
+VoxPopuli      0.340  0.270 0.110  0.130 0.0700  0.0800  2000
+ParanaPesq     0.349  0.218 0.094  0.171 0.0460  0.1200  1080
+7              0.359  0.225 0.122  0.195 0.0433  0.0561 29644
+8              0.376  0.235 0.128  0.205 0.0000  0.0561 29644&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;adjusting-for-the-wasting-votes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Adjusting for the wasting votes&lt;/h2&gt;
+&lt;p&gt;Adjusting for wasting votes, follows the same principle. The last line of the following tbale (9) has the new adjusted preference distribution, with correct sample size.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;options(digits=3)
+
+wtd.polls[9,] &amp;lt;- data.frame(wtd.polls[8,1:4] +
+                              wtd.polls[8,1:4] / 
+                              sum(wtd.polls[8,1:4]) * 
+                              wtd.polls[8,6], 
+                              Swing=0, 
+                              Wasting=0, 
+                              N=(wtd.polls[8,7] - (wtd.polls[8,6] * wtd.polls[8,7])))
+
+print(wtd.polls)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;           Bolsonaro Haddad  Ciro Others  Swing Wasting     N
+Datafolha      0.360  0.220 0.130  0.200 0.0400  0.0500 19552
+Ibope          0.360  0.220 0.110  0.180 0.0500  0.0800  3010
+MDA            0.367  0.240 0.099  0.155 0.0600  0.0780  2002
+Ipespe         0.360  0.220 0.110  0.290 0.0200  0.0000  2000
+VoxPopuli      0.340  0.270 0.110  0.130 0.0700  0.0800  2000
+ParanaPesq     0.349  0.218 0.094  0.171 0.0460  0.1200  1080
+7              0.359  0.225 0.122  0.195 0.0433  0.0561 29644
+8              0.376  0.235 0.128  0.205 0.0000  0.0561 29644
+9              0.398  0.249 0.135  0.217 0.0000  0.0000 27980&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wtd.polls$N[9] *
+  c(wtd.polls$Bolsonaro[9], (wtd.polls$Haddad[9] + wtd.polls$Ciro[9] + wtd.polls$Others[9]), 1 - wtd.polls$Bolsonaro[9] - (wtd.polls$Haddad[9] - wtd.polls$Ciro[9] - wtd.polls$Others[9]))+1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;[1] 11146 16832 19708&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;draw-1-million-samples&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Draw 1 million samples&lt;/h2&gt;
+&lt;p&gt;Finally I draw a lot os samples from the posterior distribution using the weighted polls and uninformative priors to keep it simple.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;poll &amp;lt;- c(4910, 3011, 1756, 2718)
+
+library(SciencesPo)
+library(MCMCpack)
+
+
+### draw samples from the posterior
+set.seed(1234)
+MC &amp;lt;- 1000000
+
+### Using uninformative prior (1,1,1,1)
+#samples &amp;lt;- getDirichletSamples(MC, alpha = poll + rep(1,4))  
+
+
+row= 9
+prob2win = function(row, export=1){
+  p=rdirichlet(100000,
+  wtd.polls$N[row] *
+  c(wtd.polls$Bolsonaro[row], wtd.polls$Haddad[row] + wtd.polls$Ciro[row] + wtd.polls$Others[row], 1 - wtd.polls$Bolsonaro[row] - wtd.polls$Haddad[row] - wtd.polls$Ciro[row] - wtd.polls$Others[row])+1)
+  if(export==1){
+    mean(p[,1]&amp;lt;p[,2]) ## No exceeds Yes?
+  } else {
+    return(p)
+  }
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we want to look at the margins of Bolsonaro over the combined opposition candidates. The more candidates contesting for the seat, the greater the probability that the winning candidate will receive only a minority of the votes cast.&lt;/p&gt;
+&lt;p&gt;We can also use the middle 95% range to represent the uncertainty. The numbers say about 20% of times in 1 million elections Bolsonaro appears ahead the opposition formula. Therefore, it’s very unlikely he could win the election in the primary election round.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;samples = prob2win(row= 9, export=0)
+
+combinedOpposition &amp;lt;- (samples[,2])
+frontRunner &amp;lt;- (samples[,1])
+
+margin &amp;lt;- (combinedOpposition - frontRunner)
+
+quantile(margin, probs = c(0.025, 0.5, 0.975))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt; 2.5%   50% 97.5% 
+0.192 0.203 0.215 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, we can plot the posterior distribution of simulated elections where Bolsonaro is greater than the combined opposing votes. Based on the polling data at hands, and very little effort, we can believe the far-right nationalist candidate won’t make it this Sunday as quite a few press pundits are suggesting.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt; hist(margin, 
+      col=&amp;quot;gray&amp;quot;,
+      prob = FALSE, # posterior distribution
+      breaks = &amp;quot;FD&amp;quot;, xlab = expression(p[Bolsonaro] &amp;gt; p[Opposition]),
+      main = expression(paste(bold(&amp;quot;Posterior Distribution of Elections With &amp;quot;),  p[Bolsonaro] &amp;gt; p[Opposition])));
+# Bayes estimate (middle 95%)
+abline(v=mean(margin), col=&amp;#39;red&amp;#39;, lwd=3, lty=3);&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;simulation.png&#34; alt=&#34;Posterior Distribution of Simulated Elections&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Posterior Distribution of Simulated Elections&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>/tutorial/example/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/tutorial/example/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Políticas Públicas de Esporte, Lazer e Juventude Baseadas em  Evidências</title>
+      <link>/publication/2017-politicas-publicas-baseadas-em-evidencias/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/publication/2017-politicas-publicas-baseadas-em-evidencias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game of Thrones Analysis</title>
+      <link>/project/got/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/project/got/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>May the Force of R be With You, Always!</title>
+      <link>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
+      <description>
+
+
+&lt;p&gt;With a Telegram account connected to &lt;code&gt;@TeleR&lt;/code&gt;, the force of R can always be with me, where I have data. The following is a screenshot of my mobile:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;telegram_plot.png&#34; alt=&#34;R Force&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;R Force&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If you want to have R where you are too, you only need a &lt;a href=&#34;https://telegram.org/&#34;&gt;Telegram&lt;/a&gt; account; then, you have to search for the public username &lt;code&gt;@Tele_R&lt;/code&gt;, starting a new chat with. Thanks to &lt;a href=&#34;http://telemath.altervista.org/TeleR.html&#34;&gt;TeleMath Team&lt;/a&gt;, you will be able to send R commands as messages and get answers back.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

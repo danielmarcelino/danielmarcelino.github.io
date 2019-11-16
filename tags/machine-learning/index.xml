@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine-learning on Data * Analysis &#43; R</title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in machine-learning on Data * Analysis &#43; R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Thu, 15 Jun 2017 00:00:00 -0300</lastBuildDate>
+    
+	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Game of Thrones Analysis</title>
+      <link>/project/got/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/project/got/</guid>
+      <description>A data analysis of Game of Thrones that determines who really is the main character.</description>
+    </item>
+    
+  </channel>
+</rss>

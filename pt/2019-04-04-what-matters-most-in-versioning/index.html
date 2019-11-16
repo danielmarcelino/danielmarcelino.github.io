@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.2.0">
+  <meta name="generator" content="Hugo 0.55.6" />
+  <meta name="author" content="Daniel Marcelino">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="I won&#39;t give you details on git version control tools. Instead, I&#39;ll only ask you to commit to memory these few commands...">
+
+  
+  <link rel="alternate" hreflang="en" href="/2019-04-04-what-matters-most-in-versioning/">
+  
+  <link rel="alternate" hreflang="pt-BR" href="/pt/2019-04-04-what-matters-most-in-versioning/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#E31837">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/pt/styles.css">
+  
+  <link rel="stylesheet" href="/css/chiefs-css.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-24186657-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Dados * Análise &#43; R">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Dados * Análise &#43; R">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/pt/2019-04-04-what-matters-most-in-versioning/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@dmarcelinobr">
+  <meta property="twitter:creator" content="@dmarcelinobr">
+  
+  <meta property="og:site_name" content="Dados * Análise &#43; R">
+  <meta property="og:url" content="/pt/2019-04-04-what-matters-most-in-versioning/">
+  <meta property="og:title" content="Be the Best at What Matters Most in Versioning Control | Dados * Análise &#43; R">
+  <meta property="og:description" content="I won&#39;t give you details on git version control tools. Instead, I&#39;ll only ask you to commit to memory these few commands..."><meta property="og:image" content="/pt/2019-04-04-what-matters-most-in-versioning/featured.png">
+  <meta property="og:locale" content="pt-BR">
+  
+  <meta property="article:published_time" content="2019-04-03T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-04-03T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+  <title>Be the Best at What Matters Most in Versioning Control | Dados * Análise &#43; R</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/pt">Dados * Análise &#43; R</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Alterar navegação">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#about">
+            
+            <span>Inicial</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#projects">
+            
+            <span>Projetos</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#publications_selected">
+            
+            <span>Publicações</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#posts">
+            
+            <span>Postagens</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/pt/#contact">
+            
+            <span>Contato</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <span>Português</span>
+          </a>
+          <ul class="dropdown-menu">
+            
+            <li class="dropdown-item my-0 py-0 mx-0 px-0">
+              <a href="/2019-04-04-what-matters-most-in-versioning/">
+                <span>English</span>
+              </a>
+            </li>
+            
+          </ul>
+        </li>
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/pt/2019-04-04-what-matters-most-in-versioning/featured_hu39a87b5e3b1d7e9e13e1314454ad0eec_85958_800x0_resize_box_2.png');"></div>
+  
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Be the Best at What Matters Most in Versioning Control</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-04-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-04-03 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      April 3, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+  
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/dmarcelinobr" target="_blank">@dmarcelinobr</a>&nbsp
+  
+  
+  
+
+
+
+
+
+  
+
+
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/danielmarcelino/danielmarcelino.github.io/blob/master/content/2019-04-04-what-matters-most-in-versioning/index.pt.Rmd" target="_blank">View source</a>&nbsp
+
+  
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/pt/categories/rstats/">rstats</a>, 
+    
+    <a href="/pt/categories/reproducible/">reproducible</a>
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control&amp;url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f&amp;title=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f&amp;title=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control&amp;body=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/pt/2019-04-04-what-matters-most-in-versioning/featured_hu39a87b5e3b1d7e9e13e1314454ad0eec_85958_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Be the Best at What Matters Most in Versioning Control</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2019-04-03 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-04-03 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      April 3, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Daniel Marcelino">
+  </span>
+  
+  
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-twitter"></i>
+    <a href="https://twitter.com/dmarcelinobr" target="_blank">@dmarcelinobr</a>&nbsp
+  
+  
+  
+
+
+
+
+
+  
+
+
+  <span class="middot-divider"></span>
+    
+  <span class="article-date">
+    <i class="fab fa-github"></i>
+    <a href="https://github.com/danielmarcelino/danielmarcelino.github.io/blob/master/content/2019-04-04-what-matters-most-in-versioning/index.pt.Rmd" target="_blank">View source</a>&nbsp
+
+  
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    
+    <a href="/pt/categories/rstats/">rstats</a>, 
+    
+    <a href="/pt/categories/reproducible/">reproducible</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control&amp;url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f&amp;title=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f&amp;title=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Be%20the%20Best%20at%20What%20Matters%20Most%20in%20Versioning%20Control&amp;body=%2fpt%2f2019-04-04-what-matters-most-in-versioning%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p>I began to work on some shared repositories with three novice students of R and Github workflow. I’ve noticed they are very enthusiasts with R/Rstudio coding, but they simply don’t have much waist play of versioning control tools.</p>
+<p>When I was learning and aspiring to move my repositories from a centralized system called Subversion (SVN) to Github (Git)–a system that allows multiple repositories–,<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> I found myself reading several guides on Internet, including those graphical ones, hoping to memorizing every Git command line trick.</p>
+<p>In a decade or less, Git has surpassed others code management systems and became the new norm.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> That’s why learning it is relevant. However, I’ve realized that for 99% of the work I actually do, I’d have needed to get hang of only very few commands. So I decide to write them down as they may be helpful to others as well.</p>
+<div id="find-the-version-of-git" class="section level4">
+<h4>Find the version of Git</h4>
+<p>Run <code>git --version</code></p>
+</div>
+<div id="create-a-new-git-repository" class="section level4">
+<h4>Create a new Git repository</h4>
+<ol style="list-style-type: decimal">
+<li><p>Go to the folder of the project.</p></li>
+<li><p>Run <code>git init</code></p></li>
+</ol>
+</div>
+<div id="clone-an-existing-git-repository" class="section level4">
+<h4>Clone an existing Git repository</h4>
+<p>Cloning is the process of pulling down a copy of a repository stored on a server.</p>
+<ol style="list-style-type: decimal">
+<li><p>Go to the parent folder of where you want to repository’s folder to be in.</p></li>
+<li><p><code>git clone [url to repository's git file] [name of folder / repository you want]</code></p></li>
+</ol>
+</div>
+<div id="check-the-status-of-a-git-repository" class="section level4">
+<h4>Check the status of a Git repository</h4>
+<p><code>git status</code></p>
+</div>
+<div id="tell-git-to-track-a-file-named-readme.md" class="section level4">
+<h4>Tell Git to track a file named <code>README.md</code></h4>
+<p><code>git add README.md</code></p>
+</div>
+<div id="tell-git-to-track-a-whole-folder-named-script" class="section level4">
+<h4>Tell Git to track a whole folder named <code>script</code></h4>
+<p><code>git add scripts/</code></p>
+</div>
+<div id="tell-git-to-track-and-stage-all-files-and-subfolders-in-a-directory" class="section level4">
+<h4>Tell Git to track (and stage) all files and subfolders in a directory</h4>
+<p><code>git add -A</code></p>
+</div>
+<div id="make-a-commit" class="section level4">
+<h4>Make a commit</h4>
+<p><code>git commit --m "my changes commit"</code></p>
+</div>
+<div id="view-all-branches" class="section level4">
+<h4>View all branches</h4>
+<p><code>git branch</code></p>
+</div>
+<div id="create-a-new-branch" class="section level4">
+<h4>Create a new branch</h4>
+<p><code>git branch new_model</code></p>
+</div>
+<div id="switch-to-a-branch" class="section level4">
+<h4>Switch to a branch</h4>
+<p><code>git checkout new_model</code></p>
+</div>
+<div id="create-a-new-branch-and-switch-to-it" class="section level4">
+<h4>Create a new branch and switch to it</h4>
+<p><code>git checkout -b new_ux</code></p>
+</div>
+<div id="merge-one-branch-into-another" class="section level4">
+<h4>Merge one branch into another</h4>
+<ol style="list-style-type: decimal">
+<li><p>Switch to the branch you want to pull changes into: <code>git checkout master</code></p></li>
+<li><p>Pull changes from another branch into your branch: <code>git merge new_ux</code></p></li>
+</ol>
+</div>
+<div id="set-a-remote-github-repository" class="section level4">
+<h4>Set a remote Github repository</h4>
+<ol style="list-style-type: decimal">
+<li><p>Go to GitHub.com and create a new repository.</p></li>
+<li><p>Set that repository’s url as the origin repo: <code>git remote add origin https://github.com/danielmarcelino/myfiles.git</code></p></li>
+</ol>
+</div>
+<div id="push-master-branch-to-a-github-repository" class="section level4">
+<h4>Push master branch to a Github repository</h4>
+<p>The <code>-u</code> sets the origin as the default for this branch</p>
+<p><code>git push -u origin master</code></p>
+</div>
+<div id="pull-down-from-branch-from-github-repository-to-local-repository" class="section level4">
+<h4>Pull down from branch from GitHub repository to local repository</h4>
+<p><code>git pull origin master</code></p>
+</div>
+<div id="pull-down-all-branches-from-github" class="section level4">
+<h4>Pull down all branches from GitHub</h4>
+<p><code>git fetch origin</code></p>
+</div>
+<div id="view-all-remote-branches" class="section level4">
+<h4>View all remote branches</h4>
+<p><code>git branch --remote</code></p>
+</div>
+<div id="view-log" class="section level4">
+<h4>View log</h4>
+<p><code>git log</code></p>
+</div>
+<div id="view-unstagged-changes-to-files" class="section level4">
+<h4>View unstagged changes to files</h4>
+<p><code>git diff</code></p>
+</div>
+<div id="unstage-a-file" class="section level4">
+<h4>Unstage a file</h4>
+<p><code>git reset filename</code></p>
+</div>
+<div id="undo-last-commit-move-commits-changes-to-staging" class="section level4">
+<h4>Undo last commit, move commits changes to staging</h4>
+<p><code>git reset --soft HEAD^</code></p>
+</div>
+<div id="undo-last-commit-remove-all-changes-in-your-working-directory" class="section level4">
+<h4>Undo last commit, remove all changes in your working directory</h4>
+<p><code>git reset --hard HEAD^</code></p>
+</div>
+<div id="clone-a-remote-repository-locally" class="section level4">
+<h4>Clone a remote repository locally</h4>
+<p><code>git clone url</code></p>
+</div>
+<div id="show-changes-from-a-particular-commit" class="section level4">
+<h4>Show changes from a particular commit</h4>
+<p><code>git show --pretty="format:" &lt;commit ID&gt;</code></p>
+</div>
+<div id="revert-a-commit-by-creating-a-new-commit-with-opposite-changes" class="section level4">
+<h4>Revert a commit by creating a new commit with opposite changes</h4>
+<p><code>git revert &lt;commit ID&gt;</code></p>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>To be even more precise, it’s a central repository with a series of local repositories.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014" class="uri">https://www.slideshare.net/IanSkerrett/eclipse-community-survey-2014</a><a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/pt/tags/rstats/">rstats</a>
+  
+  <a class="badge badge-light" href="/pt/tags/git/">git</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+  
+
+
+   
+  <div class = "github-edit">
+  <span class="article-tags">
+    <a class="badge badge-github" href="https://github.com/danielmarcelino/danielmarcelino.github.io/edit/master/content/2019-04-04-what-matters-most-in-versioning/index.pt.Rmd" target="_blank"><i class="fas fa-pencil-alt"></i>&nbspSuggest an edit to this post on GitHub</a>&nbsp
+
+  
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/img/profile.jpg" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/pt">Daniel Marcelino</a></h5>
+    <h6 class="card-subtitle">Cientista de Dados</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:dmarcelino@live.com" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/dmarcelinobr" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.instagram.com/dmarcelinobr" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://linkedin.com/in/daniel-marcelino-80968656" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://www.researchgate.net/profile/Daniel_Marcelino" target="_blank" rel="noopener">
+          <i class="fab fa-researchgate"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0001-6432-407X" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/danielmarcelino" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://stackoverflow.com/users/792000/daniel" target="_blank" rel="noopener">
+          <i class="fab fa-stack-overflow"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+    <div class="article-widget">
+      <div class="hr-light"></div>
+      <h3>Related</h3>
+      <ul>
+        
+        <li><a href="/pt/talk/2016-11-16-data-sciences-and-society/">Ciência de Dados e Sociedade: O Pacote SciencesPo</a></li>
+        
+        <li><a href="/pt/talk/2016-06-07-survey-therapeutic-communities/">Síntese do Survey das Comunidades Terapêuticas</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "daniel-marcelino" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2019 Daniel Marcelino &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/R.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Python.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/Java.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.d037ee5294b166a79dec317c58aea9cc.js"></script>
+
+    
+    <script src="/js/external-link.js"></script>
+    
+
+  </body>
+</html>
+
