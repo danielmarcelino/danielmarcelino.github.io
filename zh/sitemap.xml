@@ -3,12 +3,12 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/" hreflang="pt"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/zh/</loc>
-      <lastmod>2019-02-09T00:00:00-02:00</lastmod>
+      <loc>/zh/categories/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -16,11 +16,12 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/categories/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/categories/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/categories/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/zh/categories/</loc>
+      <loc>/zh/tags/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -28,11 +29,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/publication_types/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/publication_types/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/publication_types/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/tags/bayesiana/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/pt/tags/bayesiana/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/zh/publication_types/</loc>
+      <loc>/zh/tags/bayesiana/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -40,11 +41,99 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/tags/" hreflang="zh"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/tags/elei%C3%A7%C3%B5es/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/pt/tags/elei%C3%A7%C3%B5es/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/zh/tags/</loc>
+      <loc>/zh/tags/elei%C3%A7%C3%B5es/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/reproducible/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/categories/reproducible/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/reproducible/" hreflang="pt"/>
+    
+      <loc>/zh/categories/reproducible/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/categories/rstats/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/categories/rstats/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/rstats/" hreflang="pt"/>
+    
+      <loc>/zh/categories/rstats/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/tags/stan/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/tags/stan/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/stan/" hreflang="pt"/>
+    
+      <loc>/zh/tags/stan/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/" hreflang="pt"/>
+    
+      <loc>/zh/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/2019-04-08-bayesian-ideal-point-estimation/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/2019-04-08-bayesian-ideal-point-estimation/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/2019-04-08-bayesian-ideal-point-estimation/" hreflang="pt"/>
+    
+      <loc>/zh/2019-04-08-bayesian-ideal-point-estimation/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/privacy/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/privacy/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/privacy/" hreflang="pt"/>
+    
+      <loc>/zh/privacy/</loc>
+      <lastmod>2018-06-28T00:00:00-03:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/zh/publication_types/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/publication_types/" hreflang="pt"/>
+    
+      <loc>/zh/publication_types/</loc>
       <priority>0</priority>
     </url>
     

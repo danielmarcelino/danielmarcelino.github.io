@@ -2,122 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/home/</link>
+    <link>/home/</link>
     <description>Recent content in Homes on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Sat, 09 Feb 2019 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://danielmarcelino.github.io/home/hero_carousel/</link>
+      <link>/home/hero_carousel/</link>
       <pubDate>Sat, 14 Oct 2017 23:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/hero_carousel/</guid>
+      <guid>/home/hero_carousel/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://danielmarcelino.github.io/home/about/</link>
+      <link>/home/about/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/about/</guid>
+      <guid>/home/about/</guid>
       <description>Biography I&amp;rsquo;m a data/political scientist with extensive knowledge of R, Python, SQL, and reactive programming. I completed a Master degree in Comparative Studies with emphasis in political science and quantitative methods at University of Brasilia. My professional interests lie on the interface of social behavior, big data, and informatics (aka. computational social science). In particular, I&amp;rsquo;m interested in public opinion and voting, multi-agent systems and data-driven policy making.
 I love long walks, biking, and above all else, coding.</description>
     </item>
     
     <item>
       <title>Academic</title>
-      <link>https://danielmarcelino.github.io/home/hero/</link>
+      <link>/home/hero/</link>
       <pubDate>Sat, 14 Oct 2017 23:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/hero/</guid>
+      <guid>/home/hero/</guid>
       <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
     </item>
     
     <item>
       <title>Skills</title>
-      <link>https://danielmarcelino.github.io/home/skills/</link>
+      <link>/home/skills/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/skills/</guid>
+      <guid>/home/skills/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Experience</title>
-      <link>https://danielmarcelino.github.io/home/experience/</link>
+      <link>/home/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/experience/</guid>
+      <guid>/home/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://danielmarcelino.github.io/home/projects/</link>
+      <link>/home/projects/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/projects/</guid>
+      <guid>/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>https://danielmarcelino.github.io/home/publications_selected/</link>
+      <link>/home/publications_selected/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/publications_selected/</guid>
+      <guid>/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>https://danielmarcelino.github.io/home/publications/</link>
+      <link>/home/publications/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/publications/</guid>
+      <guid>/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Talks</title>
-      <link>https://danielmarcelino.github.io/home/talks_selected/</link>
+      <link>/home/talks_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/talks_selected/</guid>
+      <guid>/home/talks_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://danielmarcelino.github.io/home/talks/</link>
+      <link>/home/talks/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/talks/</guid>
+      <guid>/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>https://danielmarcelino.github.io/home/posts/</link>
+      <link>/home/posts/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/posts/</guid>
+      <guid>/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>https://danielmarcelino.github.io/home/teaching/</link>
+      <link>/home/teaching/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/teaching/</guid>
+      <guid>/home/teaching/</guid>
       <description>This is an example of using the custom widget to create your own homepage section.
 I am a teaching instructor for the following courses at University X:
  CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
@@ -125,19 +125,19 @@ I am a teaching instructor for the following courses at University X:
     
     <item>
       <title>Tags</title>
-      <link>https://danielmarcelino.github.io/home/tags/</link>
+      <link>/home/tags/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/tags/</guid>
+      <guid>/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://danielmarcelino.github.io/home/contact/</link>
+      <link>/home/contact/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/home/contact/</guid>
+      <guid>/home/contact/</guid>
       <description></description>
     </item>
     

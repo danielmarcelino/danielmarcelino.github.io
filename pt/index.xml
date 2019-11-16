@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dados * Análise &#43; R on Dados * Análise &#43; R</title>
-    <link>https://danielmarcelino.github.io/pt/</link>
+    <link>/pt/</link>
     <description>Recent content in Dados * Análise &#43; R on Dados * Análise &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Be the Best at What Matters Most in Versioning Control</title>
-      <link>https://danielmarcelino.github.io/pt/2019-04-04-what-matters-most-in-versioning/</link>
+      <link>/pt/2019-04-04-what-matters-most-in-versioning/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/pt/2019-04-04-what-matters-most-in-versioning/</guid>
+      <guid>/pt/2019-04-04-what-matters-most-in-versioning/</guid>
       <description>
 
 
@@ -153,21 +153,44 @@
     </item>
     
     <item>
+      <title>Estimação Bayesiana de Pontos Ideais</title>
+      <link>/pt/2019-04-08-bayesian-ideal-point-estimation/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/pt/2019-04-08-bayesian-ideal-point-estimation/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/pt/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/pt/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Ciência de Dados e Sociedade: O Pacote SciencesPo</title>
-      <link>https://danielmarcelino.github.io/pt/talk/2016-11-16-data-sciences-and-society/</link>
+      <link>/pt/talk/2016-11-16-data-sciences-and-society/</link>
       <pubDate>Wed, 16 Nov 2016 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/pt/talk/2016-11-16-data-sciences-and-society/</guid>
+      <guid>/pt/talk/2016-11-16-data-sciences-and-society/</guid>
       <description>&lt;p&gt;Esta é uma parte da apresentação no Seminário &lt;em&gt;Ciência de Dados e Sociedade&lt;/em&gt;, organizado pelo IBPAD e o Núcleo de Estudos e Pesquisa em Políticas Públicas, Governo e Gestão (NP3-UnB).&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Síntese do Survey das Comunidades Terapêuticas</title>
-      <link>https://danielmarcelino.github.io/pt/talk/2016-06-07-survey-therapeutic-communities/</link>
+      <link>/pt/talk/2016-06-07-survey-therapeutic-communities/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/pt/talk/2016-06-07-survey-therapeutic-communities/</guid>
+      <guid>/pt/talk/2016-06-07-survey-therapeutic-communities/</guid>
       <description>&lt;p&gt;A seguir alguns recusos adicionais para quem estiver interessado em obter mais informações sobre os resultados dessa pesquisa.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;- [*Comunidades terapêuticas e a disputa entre modelos de atenção e cuidado a usuários de droga*](http://repositorio.ipea.gov.br/bitstream/11058/8883/3/ComunTerapDrogas.pdf)
@@ -178,19 +201,19 @@
     
     <item>
       <title>Tutorial de Uso do R Selenium</title>
-      <link>https://danielmarcelino.github.io/pt/talk/2015-06-07-tutorial-r-selenium/</link>
+      <link>/pt/talk/2015-06-07-tutorial-r-selenium/</link>
       <pubDate>Sun, 07 Jun 2015 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/pt/talk/2015-06-07-tutorial-r-selenium/</guid>
+      <guid>/pt/talk/2015-06-07-tutorial-r-selenium/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Eleição Presidencial de 2014</title>
-      <link>https://danielmarcelino.github.io/pt/talk/2014-05-13-presidential-election/</link>
+      <link>/pt/talk/2014-05-13-presidential-election/</link>
       <pubDate>Tue, 13 May 2014 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/pt/talk/2014-05-13-presidential-election/</guid>
+      <guid>/pt/talk/2014-05-13-presidential-election/</guid>
       <description></description>
     </item>
     

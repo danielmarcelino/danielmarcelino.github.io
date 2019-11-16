@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/project/</link>
+    <link>/project/</link>
     <description>Recent content in Projects on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Thu, 27 Dec 2018 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ANOVA Simplified Using R</title>
-      <link>https://danielmarcelino.github.io/project/anova/</link>
+      <link>/project/anova/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/anova/</guid>
+      <guid>/project/anova/</guid>
       <description>This is a minimal set of notes and examples that form the foundation of my introduction to the analysis of variance.</description>
     </item>
     
     <item>
       <title>Soccer Predictions Using Bayesian Mixed Effects Models</title>
-      <link>https://danielmarcelino.github.io/project/soccer-predictions/</link>
+      <link>/project/soccer-predictions/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/soccer-predictions/</guid>
+      <guid>/project/soccer-predictions/</guid>
       <description>Models developed for the prediction of individual games, European domestic leagues, and the UEFA Champions League.</description>
     </item>
     
     <item>
       <title>Cartography and Spatial Analysis</title>
-      <link>https://danielmarcelino.github.io/project/mapping/</link>
+      <link>/project/mapping/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/mapping/</guid>
+      <guid>/project/mapping/</guid>
       <description>This project shows examples of how to produce maps in R, perform spatial analyses, and how to estimate centrographic statistics.</description>
     </item>
     
     <item>
       <title>Game of Thrones Analysis</title>
-      <link>https://danielmarcelino.github.io/project/got/</link>
+      <link>/project/got/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/got/</guid>
+      <guid>/project/got/</guid>
       <description>A data analysis of Game of Thrones that determines who really is the main character.</description>
     </item>
     
     <item>
       <title>Mapping the Brexit Vote</title>
-      <link>https://danielmarcelino.github.io/project/brexit/</link>
+      <link>/project/brexit/</link>
       <pubDate>Sat, 25 Jun 2016 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/brexit/</guid>
+      <guid>/project/brexit/</guid>
       <description>This data project provides some insights, specially about the spacial distribution of the &lt;code&gt;Leave vote&lt;/code&gt; across country. This project is not entirely finalized though. I still plan to overlap data from past elections and local opinion surveys data as they become available.</description>
     </item>
     
     <item>
       <title>Mapping the Brexit Vote</title>
-      <link>https://danielmarcelino.github.io/project/pitaco/</link>
+      <link>/project/pitaco/</link>
       <pubDate>Sat, 25 Jun 2016 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/pitaco/</guid>
+      <guid>/project/pitaco/</guid>
       <description>This data project provides some insights, specially about the spacial distribution of the &lt;code&gt;Leave vote&lt;/code&gt; across country. This project is not entirely finalized though. I still plan to overlap data from past elections and local opinion surveys data as they become available.</description>
     </item>
     
     <item>
       <title>SciencesPo Package</title>
-      <link>https://danielmarcelino.github.io/project/sciencespo/</link>
+      <link>/project/sciencespo/</link>
       <pubDate>Thu, 03 Jan 2013 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/sciencespo/</guid>
+      <guid>/project/sciencespo/</guid>
       <description>This is a minimal set of notes and examples of using the R package SciencesPo: A Tool Set for Analyzing Political Behaviour Data.</description>
     </item>
     
     <item>
       <title>FPTP2AV: Simulate Election Outcomes for Alternative Vote System Using the Actual FPTP Votes</title>
-      <link>https://danielmarcelino.github.io/project/fptp2av/</link>
+      <link>/project/fptp2av/</link>
       <pubDate>Thu, 15 Sep 2011 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/fptp2av/</guid>
+      <guid>/project/fptp2av/</guid>
       <description>This project was packaged and became a beta version for publication. The set of scripts simulates election outcomes under a different voting system. Taking First Past the Post (FPTP) votes as imputes, the package simulates hypothetical outcomes given the Alternative Vote System.</description>
     </item>
     
     <item>
       <title>SoundexBR: Phonetic-Coding for Portuguese</title>
-      <link>https://danielmarcelino.github.io/project/soundexbr/</link>
+      <link>/project/soundexbr/</link>
       <pubDate>Sat, 15 Jan 2011 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/soundexbr/</guid>
+      <guid>/project/soundexbr/</guid>
       <description>This project was packaged in 2011 under the name: SoundexBR. The package provides an algorithm for decoding names into phonetic codes, as pronounced in Portuguese. The goal is for homophones to be encoded as the same representation, so that they can match despite minor differences in spelling.</description>
     </item>
     
     <item>
       <title>Multilevel Analysis</title>
-      <link>https://danielmarcelino.github.io/project/multilevel/</link>
+      <link>/project/multilevel/</link>
       <pubDate>Mon, 27 Dec 2010 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/multilevel/</guid>
+      <guid>/project/multilevel/</guid>
       <description>Master dissertation submitted to the University of Brasilia, investigating the impact of campaign spending in the Brazilian elections. This work uses a lot multilevel analysis models.</description>
     </item>
     

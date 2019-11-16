@@ -2,319 +2,337 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
-    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>git</title>
-      <link>https://danielmarcelino.github.io/tags/git/</link>
-      <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
+      <title>dplyr</title>
+      <link>/tags/dplyr/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/git/</guid>
+      <guid>/tags/dplyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rstats</title>
-      <link>https://danielmarcelino.github.io/tags/rstats/</link>
+      <link>/tags/rstats/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstats/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/tags/git/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/rstats/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>psychometrics</title>
-      <link>https://danielmarcelino.github.io/tags/psychometrics/</link>
-      <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/psychometrics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SciencesPo</title>
-      <link>https://danielmarcelino.github.io/tags/sciencespo/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/sciencespo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>politics</title>
-      <link>https://danielmarcelino.github.io/tags/politics/</link>
-      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/politics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rstats-proj</title>
-      <link>https://danielmarcelino.github.io/tags/rstats-proj/</link>
-      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/rstats-proj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sports-proj</title>
-      <link>https://danielmarcelino.github.io/tags/sports-proj/</link>
-      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/sports-proj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>doParallel</title>
-      <link>https://danielmarcelino.github.io/tags/doparallel/</link>
-      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/doparallel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>parallel</title>
-      <link>https://danielmarcelino.github.io/tags/parallel/</link>
-      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/parallel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pbapply</title>
-      <link>https://danielmarcelino.github.io/tags/pbapply/</link>
-      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/pbapply/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>educational-assessment-proj</title>
-      <link>https://danielmarcelino.github.io/tags/educational-assessment-proj/</link>
-      <pubDate>Wed, 10 Oct 2018 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/educational-assessment-proj/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>curitiba</title>
-      <link>https://danielmarcelino.github.io/tags/curitiba/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/curitiba/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>methods</title>
-      <link>https://danielmarcelino.github.io/tags/methods/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sports</title>
-      <link>https://danielmarcelino.github.io/tags/sports/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/sports/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>deep-learning</title>
-      <link>https://danielmarcelino.github.io/tags/deep-learning/</link>
-      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>machine-learning</title>
-      <link>https://danielmarcelino.github.io/tags/machine-learning/</link>
-      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>telegram</title>
-      <link>https://danielmarcelino.github.io/tags/telegram/</link>
-      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/telegram/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>r</title>
-      <link>https://danielmarcelino.github.io/tags/r/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>viz</title>
-      <link>https://danielmarcelino.github.io/tags/viz/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/viz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>gov</title>
-      <link>https://danielmarcelino.github.io/tags/gov/</link>
-      <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/gov/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sampling</title>
-      <link>https://danielmarcelino.github.io/tags/sampling/</link>
-      <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/sampling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>elections</title>
-      <link>https://danielmarcelino.github.io/tags/elections/</link>
-      <pubDate>Mon, 14 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/elections/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reproducible</title>
-      <link>https://danielmarcelino.github.io/tags/reproducible/</link>
-      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/reproducible/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>polls</title>
-      <link>https://danielmarcelino.github.io/tags/polls/</link>
-      <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/tags/polls/</guid>
+      <guid>/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bayesian</title>
-      <link>https://danielmarcelino.github.io/tags/bayesian/</link>
-      <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
+      <link>/tags/bayesian/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/bayesian/</guid>
+      <guid>/tags/bayesian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elections</title>
+      <link>/tags/elections/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/elections/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stan</title>
+      <link>/tags/stan/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psychometrics</title>
+      <link>/tags/psychometrics/</link>
+      <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/psychometrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SciencesPo</title>
+      <link>/tags/sciencespo/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sciencespo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>politics</title>
+      <link>/tags/politics/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/politics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstats-proj</title>
+      <link>/tags/rstats-proj/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
+      
+      <guid>/tags/rstats-proj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sports-proj</title>
+      <link>/tags/sports-proj/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
+      
+      <guid>/tags/sports-proj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>doParallel</title>
+      <link>/tags/doparallel/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/doparallel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parallel</title>
+      <link>/tags/parallel/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/parallel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pbapply</title>
+      <link>/tags/pbapply/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pbapply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>educational-assessment-proj</title>
+      <link>/tags/educational-assessment-proj/</link>
+      <pubDate>Wed, 10 Oct 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/educational-assessment-proj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>curitiba</title>
+      <link>/tags/curitiba/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/curitiba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>methods</title>
+      <link>/tags/methods/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sports</title>
+      <link>/tags/sports/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/sports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep-learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine-learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>telegram</title>
+      <link>/tags/telegram/</link>
+      <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/telegram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>r</title>
+      <link>/tags/r/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>viz</title>
+      <link>/tags/viz/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/viz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gov</title>
+      <link>/tags/gov/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/gov/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sampling</title>
+      <link>/tags/sampling/</link>
+      <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
+      
+      <guid>/tags/sampling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reproducible</title>
+      <link>/tags/reproducible/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reproducible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polls</title>
+      <link>/tags/polls/</link>
+      <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/polls/</guid>
       <description></description>
     </item>
     
     <item>
       <title>educational-assessment</title>
-      <link>https://danielmarcelino.github.io/tags/educational-assessment/</link>
+      <link>/tags/educational-assessment/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/educational-assessment/</guid>
+      <guid>/tags/educational-assessment/</guid>
       <description></description>
     </item>
     
     <item>
       <title>election</title>
-      <link>https://danielmarcelino.github.io/tags/election/</link>
+      <link>/tags/election/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/election/</guid>
+      <guid>/tags/election/</guid>
       <description></description>
     </item>
     
     <item>
       <title>public opinion</title>
-      <link>https://danielmarcelino.github.io/tags/public-opinion/</link>
+      <link>/tags/public-opinion/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/public-opinion/</guid>
+      <guid>/tags/public-opinion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>campaign finance</title>
-      <link>https://danielmarcelino.github.io/tags/campaign-finance/</link>
+      <link>/tags/campaign-finance/</link>
       <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/campaign-finance/</guid>
+      <guid>/tags/campaign-finance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>congress</title>
-      <link>https://danielmarcelino.github.io/tags/congress/</link>
+      <link>/tags/congress/</link>
       <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/congress/</guid>
+      <guid>/tags/congress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>brazilian politics</title>
-      <link>https://danielmarcelino.github.io/tags/brazilian-politics/</link>
+      <link>/tags/brazilian-politics/</link>
       <pubDate>Sun, 01 Feb 2009 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/brazilian-politics/</guid>
+      <guid>/tags/brazilian-politics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>journalism</title>
-      <link>https://danielmarcelino.github.io/tags/journalism/</link>
+      <link>/tags/journalism/</link>
       <pubDate>Thu, 15 Jan 2009 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/journalism/</guid>
+      <guid>/tags/journalism/</guid>
       <description></description>
     </item>
     
     <item>
       <title>political values</title>
-      <link>https://danielmarcelino.github.io/tags/political-values/</link>
+      <link>/tags/political-values/</link>
       <pubDate>Thu, 15 Jan 2009 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/political-values/</guid>
+      <guid>/tags/political-values/</guid>
       <description></description>
     </item>
     
     <item>
       <title>survey</title>
-      <link>https://danielmarcelino.github.io/tags/survey/</link>
+      <link>/tags/survey/</link>
       <pubDate>Thu, 15 Jan 2009 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tags/survey/</guid>
+      <guid>/tags/survey/</guid>
       <description></description>
     </item>
     

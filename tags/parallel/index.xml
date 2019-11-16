@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>parallel on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/parallel/</link>
+    <link>/tags/parallel/</link>
     <description>Recent content in parallel on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Wed, 12 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/parallel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/parallel/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Reading List Faster With parallel, doParallel, and pbapply</title>
-      <link>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</link>
+      <link>/post/2018-12-12-reading-list-faster/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</guid>
+      <guid>/post/2018-12-12-reading-list-faster/</guid>
       <description>It&amp;rsquo;s important to realise that every bit of optimisation matters.</description>
     </item>
     
