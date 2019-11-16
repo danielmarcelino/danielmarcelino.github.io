@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>polls on Data * Analysis &#43; R</title>
-    <link>/tags/polls/</link>
+    <link>https://danielmarcelino.github.io/tags/polls/</link>
     <description>Recent content in polls on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Fri, 19 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/polls/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/tags/polls/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Yep. He made it, the country voted No</title>
-      <link>/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
+      <link>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
       <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
+      <guid>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
       <description>This post talks big about my last predictions for the Referendum in Scotland.</description>
     </item>
     
     <item>
       <title>Bayes says `don&#39;t worry` about Scotland&#39;s Referendum</title>
-      <link>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
+      <link>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
       <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
+      <guid>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
       <description>This post uses Bayesian methods to show the anti-independence vote has an overwhelming advantage over the pro-independence side.</description>
     </item>
     

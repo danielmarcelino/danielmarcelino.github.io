@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>public opinion on Dados * Análise &#43; R</title>
-    <link>/pt/tags/public-opinion/</link>
+    <link>https://danielmarcelino.github.io/pt/tags/public-opinion/</link>
     <description>Recent content in public opinion on Dados * Análise &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Tue, 13 May 2014 00:00:00 -0300</lastBuildDate>
     
-	<atom:link href="/pt/tags/public-opinion/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/pt/tags/public-opinion/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Eleição Presidencial de 2014</title>
-      <link>/pt/talk/2014-05-13-presidential-election/</link>
+      <link>https://danielmarcelino.github.io/pt/talk/2014-05-13-presidential-election/</link>
       <pubDate>Tue, 13 May 2014 00:00:00 -0300</pubDate>
       
-      <guid>/pt/talk/2014-05-13-presidential-election/</guid>
+      <guid>https://danielmarcelino.github.io/pt/talk/2014-05-13-presidential-election/</guid>
       <description></description>
     </item>
     

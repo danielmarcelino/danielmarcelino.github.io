@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>viz on Data * Analysis &#43; R</title>
-    <link>/tags/viz/</link>
+    <link>https://danielmarcelino.github.io/tags/viz/</link>
     <description>Recent content in viz on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/viz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/tags/viz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The Effective Number of Parties in the Electorate by Year and Region</title>
-      <link>/post/2016-11-26-effective-number-of-parties/</link>
+      <link>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/2016-11-26-effective-number-of-parties/</guid>
+      <guid>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</guid>
       <description>Using the American National Election Studies, compute the Effective Number of Parties in the electorate across regions and years/waves.</description>
     </item>
     
     <item>
       <title>Yet the Worst Olympic Chart</title>
-      <link>/post/2016-08-06-yet-the-worst-olympic-chart/</link>
+      <link>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
+      <guid>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
       <description>The Olympics barely began but we already have the worst chart winner.</description>
     </item>
     

@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types on Data * Analysis &#43; R</title>
-    <link>/publication_types/</link>
+    <link>https://danielmarcelino.github.io/publication_types/</link>
     <description>Recent content in Publication_types on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Fri, 01 Mar 2019 00:00:00 -0300</lastBuildDate>
     
-	<atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2</title>
-      <link>/publication_types/2/</link>
+      <link>https://danielmarcelino.github.io/publication_types/2/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
       
-      <guid>/publication_types/2/</guid>
+      <guid>https://danielmarcelino.github.io/publication_types/2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>7</title>
-      <link>/publication_types/7/</link>
+      <link>https://danielmarcelino.github.io/publication_types/7/</link>
       <pubDate>Mon, 15 Sep 2014 00:00:00 -0300</pubDate>
       
-      <guid>/publication_types/7/</guid>
+      <guid>https://danielmarcelino.github.io/publication_types/7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>3</title>
-      <link>/publication_types/3/</link>
+      <link>https://danielmarcelino.github.io/publication_types/3/</link>
       <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
       
-      <guid>/publication_types/3/</guid>
+      <guid>https://danielmarcelino.github.io/publication_types/3/</guid>
       <description></description>
     </item>
     
