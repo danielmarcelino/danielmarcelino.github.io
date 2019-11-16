@@ -1,20 +1,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data * Analysis &#43; R on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/</link>
+    <link>/</link>
     <description>Recent content in Data * Analysis &#43; R on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
-    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>An R Little Secret! How could I live without it?</title>
+      <link>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</guid>
+      <description>
+
+
+&lt;p&gt;For many years I’ve been coding using &lt;code&gt;dplyr&lt;/code&gt; functions and always get annoyde with conflict fuctions issues. Especially those of heavy usage functions as the &lt;code&gt;select()&lt;/code&gt;, &lt;code&gt;filter()&lt;/code&gt;, and &lt;code&gt;lag()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;── Conflicts ─────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To guarantee that I will always execute the right functions, I usually write them explicitly, informing the package then the desired function name: &lt;code&gt;dplyr::select()&lt;/code&gt;. Years of R programming experience tells me going down this rule and I’ll be always on the safe side.&lt;/p&gt;
+&lt;p&gt;However, I never realized that one thing I could have used is simply pass the function explicitly as a variable: &lt;code&gt;select &amp;lt;- dplyr::select&lt;/code&gt;. This sounds obvious now, but if I had dared to try this “coding style” before, it could have saved me a lot of repetition in my data manipulation scripts. See this in context:&lt;/p&gt;
+&lt;div id=&#34;set-the-most-frequent-usage-as-a-variable&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set the most frequent usage as a variable&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
+
+select &amp;lt;- dplyr::select&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;then-use-it-as-you-whish&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Then use it as you whish&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;
+mtcars %&amp;gt;% select(mpg, disp) %&amp;gt;% head()
+#&amp;gt;                    mpg disp
+#&amp;gt; Mazda RX4         21.0  160
+#&amp;gt; Mazda RX4 Wag     21.0  160
+#&amp;gt; Datsun 710        22.8  108
+#&amp;gt; Hornet 4 Drive    21.4  258
+#&amp;gt; Hornet Sportabout 18.7  360
+#&amp;gt; Valiant           18.1  225&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Be the Best at What Matters Most in Versioning Control</title>
-      <link>https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/</link>
+      <link>/2019-04-04-what-matters-most-in-versioning/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/</guid>
+      <guid>/2019-04-04-what-matters-most-in-versioning/</guid>
       <description>
 
 
@@ -159,20 +195,59 @@
     </item>
     
     <item>
+      <title>Bayesian Ideal Points Estimation</title>
+      <link>/2019-04-08-bayesian-ideal-point-estimation/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019-04-08-bayesian-ideal-point-estimation/</guid>
+      <description>
+
+
+&lt;div id=&#34;packages-youll-need&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Packages you’ll need&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First of all, make sure you’ve a working C++ compiler in your machine; you’ll need it for Stan/rstan to work.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# devtools::install_github(&amp;quot;dmarcelino/SenadoBR&amp;quot;)
+# devtools::install_github(&amp;quot;rmcelreath/rethinking&amp;quot;)
+library(readr) # pacakge for reading data 
+library(rstan) # package for interacting with Stan (sampling over distributions) 
+# library(rethinking) # package for interacting with Stan
+library(ggplot2) # package for plotting &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;introduction&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This tutorial will use data from the brazilian Senate, and build a comparison between two approaches very widespread in the political science studies. Namely, the&lt;/p&gt;
+&lt;p&gt;y_{ij} = x_i - _j,&lt;/p&gt;
+&lt;p&gt;where yij
+is our data matrix of observed votes (1=yes, 0=no, absent); xi
+are the legislator ideal points, and βj
+and αj
+are the discrimination and difficulty parameters, respectively (slope and intercept). See Clinton, Jackman &amp;amp; Rivers (2004) for more details.&lt;/p&gt;
+&lt;p&gt;First, we’ll load the packages and import the data from my github repo using read_csv, which is roll-call data from the 53rd legislature of the Brazilian Federal Senate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;The data&lt;/h2&gt;
+&lt;p&gt;First, we’ll load the packages and import the data from my github repo using read_csv, which is roll-call data from the 53rd legislature of the Brazilian Federal Senate.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Extreme non-viable candidates and quota maneuvering in Brazilian legislative elections</title>
-      <link>https://danielmarcelino.github.io/publication/2019-extreme-non-viable-candidates/</link>
+      <link>/publication/2019-extreme-non-viable-candidates/</link>
       <pubDate>Fri, 01 Mar 2019 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/publication/2019-extreme-non-viable-candidates/</guid>
+      <guid>/publication/2019-extreme-non-viable-candidates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bolsonaro&#39;s First Job Approval Ratings</title>
-      <link>https://danielmarcelino.github.io/post/2019-02-26-presidential-job-approval-ratings/</link>
+      <link>/post/2019-02-26-presidential-job-approval-ratings/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2019-02-26-presidential-job-approval-ratings/</guid>
+      <guid>/post/2019-02-26-presidential-job-approval-ratings/</guid>
       <description>
 
 
@@ -195,28 +270,28 @@
     
     <item>
       <title>ANOVA Simplified Using R</title>
-      <link>https://danielmarcelino.github.io/project/anova/</link>
+      <link>/project/anova/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/anova/</guid>
+      <guid>/project/anova/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Soccer Predictions Using Bayesian Mixed Effects Models</title>
-      <link>https://danielmarcelino.github.io/project/soccer-predictions/</link>
+      <link>/project/soccer-predictions/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/soccer-predictions/</guid>
+      <guid>/project/soccer-predictions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reading List Faster With parallel, doParallel, and pbapply</title>
-      <link>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</link>
+      <link>/post/2018-12-12-reading-list-faster/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</guid>
+      <guid>/post/2018-12-12-reading-list-faster/</guid>
       <description>
 
 
@@ -313,19 +388,19 @@ table(loaded_datasets1 == loaded_datasets2)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Cartography and Spatial Analysis</title>
-      <link>https://danielmarcelino.github.io/project/mapping/</link>
+      <link>/project/mapping/</link>
       <pubDate>Wed, 10 Oct 2018 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/mapping/</guid>
+      <guid>/project/mapping/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Will Brazil Goes to the Instant Runoff Election?</title>
-      <link>https://danielmarcelino.github.io/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
+      <link>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
+      <guid>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
       <description>
 
 
@@ -472,10 +547,10 @@ abline(v=mean(margin), col=&amp;#39;red&amp;#39;, lwd=3, lty=3);&lt;/code&gt;&lt
     
     <item>
       <title>Example Page</title>
-      <link>https://danielmarcelino.github.io/tutorial/example/</link>
+      <link>/tutorial/example/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/tutorial/example/</guid>
+      <guid>/tutorial/example/</guid>
       <description>
 
 &lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
@@ -491,29 +566,39 @@ abline(v=mean(margin), col=&amp;#39;red&amp;#39;, lwd=3, lty=3);&lt;/code&gt;&lt
     </item>
     
     <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0300</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Políticas Públicas de Esporte, Lazer e Juventude Baseadas em  Evidências</title>
-      <link>https://danielmarcelino.github.io/publication/2017-politicas-publicas-baseadas-em-evidencias/</link>
+      <link>/publication/2017-politicas-publicas-baseadas-em-evidencias/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/publication/2017-politicas-publicas-baseadas-em-evidencias/</guid>
+      <guid>/publication/2017-politicas-publicas-baseadas-em-evidencias/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Game of Thrones Analysis</title>
-      <link>https://danielmarcelino.github.io/project/got/</link>
+      <link>/project/got/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/got/</guid>
+      <guid>/project/got/</guid>
       <description></description>
     </item>
     
     <item>
       <title>May the Force of R be With You, Always!</title>
-      <link>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
+      <link>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
+      <guid>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
       <description>
 
 
@@ -523,171 +608,6 @@ abline(v=mean(margin), col=&amp;#39;red&amp;#39;, lwd=3, lty=3);&lt;/code&gt;&lt
 &lt;p class=&#34;caption&#34;&gt;R Force&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;If you want to have R where you are too, you only need a &lt;a href=&#34;https://telegram.org/&#34;&gt;Telegram&lt;/a&gt; account; then, you have to search for the public username &lt;code&gt;@Tele_R&lt;/code&gt;, starting a new chat with. Thanks to &lt;a href=&#34;http://telemath.altervista.org/TeleR.html&#34;&gt;TeleMath Team&lt;/a&gt;, you will be able to send R commands as messages and get answers back.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Effective Number of Parties in the Electorate by Year and Region</title>
-      <link>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</guid>
-      <description>
-
-
-&lt;div id=&#34;tasks-compute-the-effective-number-of-parties-by-year-and-region&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Tasks: Compute the Effective Number of Parties by year and region&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Using the American National Election Studies, compute the Effective Number of Parties in the electorate across regions and years/waves.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-data&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The data&lt;/h2&gt;
-&lt;p&gt;The data come from The American National Election Studies (ANES). The &lt;a href=&#34;http://www.electionstudies.org/&#34;&gt;ANES&lt;/a&gt; is a survey that covers voting behavior, public opinion, and political participation. Many other countries have their own version of this survey, for instance see &lt;a href=&#34;http://ellisp.github.io/blog/2016/09/18/nzes1&#34;&gt;here&lt;/a&gt;. While the primary mission of these studies is to answer questions about voting behavior, the wealth of variables collected amongst voters means that we can use these data to answer other questions too. If you would like to know about the other variables contained in the ANES questionnaires, you may want to read its &lt;a href=&#34;http://www.electionstudies.org/studypages/anes_timeseries_cdf/anes_timeseries_cdf_codebook_var.pdf&#34;&gt;codebook&lt;/a&gt;. You may also be interested in a &lt;a href=&#34;http://www.asdfree.com/2013/11/analyze-american-national-election.html&#34;&gt;post&lt;/a&gt; by Anthony Damico on this topic.&lt;/p&gt;
-&lt;p&gt;There are many ways you can import the version of data I’ve made. For example, you download it. Then read it.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-library(ggplot2)
-library(RCurl)
-library(SciencesPo) &lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;download.file(&amp;quot;https://github.com/danielmarcelino/Datasets/raw/master/ANES/anes-data.RData&amp;quot;, destfile = &amp;quot;anes-data.RData&amp;quot;)
-
-ANES &amp;lt;- readRDS(&amp;quot;anes-data.RData&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;data-chasing&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Data chasing&lt;/h2&gt;
-&lt;p&gt;I’m particularly interested in 3 variables from the list. Party identification (VCF0301), originally measured as 7-point scale, the census region code (VCF0112), and years of the wave (VCF0004).&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ANES$PID3 &amp;lt;- factor(ANES$VCF0301) # Convert to three-level Party ID:
-levels(ANES$PID3) &amp;lt;- c(&amp;quot;Dem&amp;quot;, &amp;quot;Dem&amp;quot;, &amp;quot;Dem&amp;quot;, &amp;quot;Ind&amp;quot;, &amp;quot;Rep&amp;quot;, &amp;quot;Rep&amp;quot;, &amp;quot;Rep&amp;quot;)
-
-ANES$Region &amp;lt;- factor(ANES$VCF0112) # # Convert to factor
-levels(ANES$Region) &amp;lt;- c(&amp;quot;Northeast&amp;quot;, &amp;quot;North Central&amp;quot;, &amp;quot;South&amp;quot;, &amp;quot;West&amp;quot;)
-
-names(ANES)[names(ANES)==&amp;quot;VCF0004&amp;quot;] &amp;lt;- &amp;quot;Year&amp;quot;
-
-# ANES &amp;lt;- ANES[(which(ANES$VCF0004 %in% c(2000, 2002, 2004, 2008,2012))),]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-effective-number-of-parties&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The Effective Number of Parties&lt;/h2&gt;
-&lt;p&gt;For those who do not know the concept of an “Effective Number of Parties”, you can read a &lt;a href=&#34;http://danielmarcelino.github.io/blog/2014/A-bit-more-fragmented.html&#34;&gt;post back in 2014&lt;/a&gt;, or go to &lt;a href=&#34;https://en.wikipedia.org/wiki/Effective_number_of_parties&#34;&gt;Wikipedia&lt;/a&gt; for summarizing details. In short, the effective number of parties is the number of viable or important political parties in a party system that includes parties of unequal size. This measure is given by the inverse of the Herfindahl-Hirschman Index (HHI) or the inverse participation ratio (IPR) in physics. The HHI is calculated by taking the voting share of each party in the electorate, squaring them, and summing the result: &lt;span class=&#34;math inline&#34;&gt;\(HHI = s1^2 + s2^2 + s3^2 + ... + sn^2\)&lt;/span&gt; (where &lt;em&gt;s&lt;/em&gt; is the voting share of each party expressed as a whole number. In mathematical notation, it looks like:&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[HHI = \sum_{i=1}^N s_i^2\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;For now, I’ll be using &lt;em&gt;dplyr&lt;/em&gt; to estimate the effective number of parties by year and region, but the &lt;strong&gt;SciencesPo&lt;/strong&gt; package has a function named &lt;em&gt;politicalDiversity&lt;/em&gt; that can calculate several indices used by political science scholars, which I’ll be addressing in future posts.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ENPpid3 &amp;lt;- ANES %&amp;gt;% 
-group_by(Year, Region) %&amp;gt;%
-  summarise(invHHI = sum(table(PID3))^2 / sum(table(PID3)^2)) %&amp;gt;%
-filter(!is.na(Region))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;print(ENPpid3)
-
-Source: local data frame [112 x 3]
-Groups: Year [28]
-
-    Year        Region   invHHI
-   &amp;lt;dbl&amp;gt;        &amp;lt;fctr&amp;gt;    &amp;lt;dbl&amp;gt;
-1   1952     Northeast 2.251207
-2   1952 North Central 2.231502
-3   1952         South 1.538712
-4   1952          West 2.119764
-5   1956     Northeast 2.352651
-6   1956 North Central 2.419891
-7   1956         South 1.816944
-8   1956          West 2.395399
-9   1958     Northeast 2.296220
-10  1958 North Central 2.247543
-# ... with 102 more rows&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-plot&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The plot&lt;/h2&gt;
-&lt;p&gt;The index takes into consideration the relative size distribution of the parties (actually, declared partisanship) in an electorate. It approaches 1 when the distribution of preferences in a region is concentrated around only one party. Conversely, the index increases when the number of parties favored in the region increases.&lt;/p&gt;
-&lt;p&gt;The analysis suggests a highly concentrated political market in-the-electorate in the South states, around 1 and a half party in the 50s, but then regressing towards the national mean (invHHI = 2.349) after the 60s.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;gg &amp;lt;- ggplot(ENPpid3)
-gg &amp;lt;- gg + geom_line(aes(x = Year, y = invHHI, colour = Region), size=1.1)
-gg &amp;lt;- gg + scale_x_continuous(limits=c(1952, 2012), 
-breaks =  round(seq(1952, 2012, by = 4),1)) 
-gg &amp;lt;- gg + scale_y_continuous(limits=c(1, 3))
-gg &amp;lt;- gg + theme_pub()
-gg &amp;lt;- gg + labs(title = &amp;quot;Effective Number of Parties-in-the-Electorate&amp;quot;, 
-x = &amp;quot;Year of the survey&amp;quot;, y = &amp;quot;Index&amp;quot;)
-gg&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;featured.png&#34; alt=&#34;Effective number of parties&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;Effective number of parties&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;It’s true that majority plurality (single ballot) electoral systems tend to have a low number of effective parties compared to majority second ballot systems and to proportional representation systems. With an average count of effective parties in-the-electorate around 2, there is not much room for a third political force to emerge; and this seems to be quite consolidated among regions.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Data Science and Society: The SciencesPo R Package</title>
-      <link>https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/</link>
-      <pubDate>Wed, 16 Nov 2016 00:00:00 -0200</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/</guid>
-      <description>&lt;p&gt;This presentation is part of a coordinated edition seminar, &lt;em&gt;Data Science and Society&lt;/em&gt;, organized by IBPAD and Núcleo de Estudos e Pesquisa em Políticas Públicas, Governo e Gestão (NP3-UnB).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Yet the Worst Olympic Chart</title>
-      <link>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</link>
-      <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
-      <description>
-
-
-&lt;p&gt;Ah, the numbers! The Olympic Games are back in high style in Rio. Despite Brazil’s sluggish economy and unfulfilled promises for this Summer Olympic Games, I’d say, my expectations were met yesterday with such a beautiful opening ceremony. Let’s follow the competition over the next few days–the pressure to perform has only just begun.&lt;/p&gt;
-&lt;p&gt;One interesting aspect about the Olympic games is the way people around the globe cover it. In fact, several news houses are quite excited about telling predictions and showing medals rankings of all sort, starting soon today. Surprisingly, yesterday my eyes catch a stacked bar chart by &lt;a href=&#34;http://www.nbcolympics.com/&#34;&gt;NBC&lt;/a&gt; with a really bad visualization taste. It’s so inaccurate that it deserves the title of &lt;em&gt;Worst Olympic Chart&lt;/em&gt;.&lt;/p&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;featured.png&#34; alt=&#34;A chart from NBC Olympics&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;A chart from NBC Olympics&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;The colors are fine, but the dimensions are simply misleading. How have the 976 USA Olympic gold medals been given less length in the plot than 797 Russia’s medals (silver and bronze), or all 777.5 medals of Great Britain? Yep, that’s right; one can get half a medal by tying for a placement. Anyway, I believe it shouldn’t be that difficult to make a decent-looking, yet accurate plot for readers. But perhaps the worst is yet to come.&lt;/p&gt;
-&lt;div id=&#34;top-3-all-time-olympic-medals&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Top-3 all-time Olympic medals&lt;/h1&gt;
-&lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;olympicmedals.png&#34; /&gt;
-
-&lt;/div&gt;
-&lt;div id=&#34;the-data-points&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;The data points&lt;/h4&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt; library(dplyr)     
-
- country = c(rep(&amp;#39;US&amp;#39;,3),rep(&amp;#39;RUS&amp;#39;,3),rep(&amp;#39;GB&amp;#39;,3))      
- Medal = rep(c(&amp;#39;Gold&amp;#39;,&amp;#39;Silver&amp;#39;,&amp;#39;Bronze&amp;#39;),3)     
- counts = c(976.0, 759.5, 668.5, 440.0, 357.0,326.0, 233.5, 272.5, 271.5)       
-
- Olympics = as.data.frame(      
- cbind(country,     
-  Medal,        
- counts))       
-
- Olympics$counts = as.numeric(levels(Olympics$counts))[Olympics$counts]     
-Olympics$Medal &amp;lt;- factor(Olympics$Medal,levels = c(&amp;#39;Gold&amp;#39;,&amp;#39;Silver&amp;#39;,&amp;#39;Bronze&amp;#39;))       
-
-Olympics &amp;lt;- Olympics %&amp;gt;%        
- group_by(country) %&amp;gt;%      
- mutate(mid_y=cumsum(counts) - 0.5*counts)      
- &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;do-the-plot&#34; class=&#34;section level4&#34;&gt;
-&lt;h4&gt;Do the plot&lt;/h4&gt;
-&lt;p&gt;Updated: to work properly, please install the ggplot2 development version, otherwise delete the theme setting line.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2) # devtools::install_github(&amp;#39;haddley/ggplot2&amp;#39;)  
-library(SciencesPo) # for the theme:
-devtools::install_github(&amp;#39;danielmarcelino/SciencesPo&amp;#39;)      
-
-g &amp;lt;- ggplot(Olympics,aes(x = country, y=counts, fill = Medal))  
-g &amp;lt;- g + geom_bar(stat = &amp;#39;identity&amp;#39;)        
-g &amp;lt;- g + scale_fill_manual(values = c(&amp;#39;#FFD700&amp;#39;,&amp;#39;#C0C0C0&amp;#39;,&amp;#39;#CD7F32&amp;#39;))       
-g &amp;lt;- g + scale_y_continuous(limits = c(0, 2500))        
-g &amp;lt;- g + geom_text(aes(label=counts, y = mid_y), size = 3)      
-g &amp;lt;- g + labs(x=&amp;#39;&amp;#39;,y=&amp;#39;Number of Medals&amp;#39;, title=&amp;#39;Olympic Medals&amp;#39;)
-g &amp;lt;- g + coord_flip()       
-# g &amp;lt;- g + theme_scipo(base_size = 13)      
-g &amp;lt;- g + no_y_gridlines()       
-print(g)        &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     

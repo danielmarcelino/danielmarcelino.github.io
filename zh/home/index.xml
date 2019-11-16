@@ -2,95 +2,95 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on 数据 * 分析 &#43; R</title>
-    <link>https://danielmarcelino.github.io/zh/home/</link>
+    <link>/zh/home/</link>
     <description>Recent content in Homes on 数据 * 分析 &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Sat, 09 Feb 2019 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/zh/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/zh/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://danielmarcelino.github.io/zh/home/about/</link>
+      <link>/zh/home/about/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/about/</guid>
+      <guid>/zh/home/about/</guid>
       <description>Biography I&amp;rsquo;m a data/political scientist with extensive knowledge of R, Python, SQL, and reactive programming. I completed a Master degree in Comparative Studies with emphasis in political science and quantitative methods at University of Brasilia. My professional interests lie on the interface of social behavior, big data, and informatics (aka. computational social science). In particular, I&amp;rsquo;m interested in public opinion and voting, multi-agent systems and data-driven policy making.
 I love long walks, biking, and above all else, coding.</description>
     </item>
     
     <item>
       <title>Experience</title>
-      <link>https://danielmarcelino.github.io/zh/home/experience/</link>
+      <link>/zh/home/experience/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/experience/</guid>
+      <guid>/zh/home/experience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>https://danielmarcelino.github.io/zh/home/publications_selected/</link>
+      <link>/zh/home/publications_selected/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/publications_selected/</guid>
+      <guid>/zh/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>https://danielmarcelino.github.io/zh/home/publications/</link>
+      <link>/zh/home/publications/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/publications/</guid>
+      <guid>/zh/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Selected Talks</title>
-      <link>https://danielmarcelino.github.io/zh/home/talks_selected/</link>
+      <link>/zh/home/talks_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0300</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/talks_selected/</guid>
+      <guid>/zh/home/talks_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://danielmarcelino.github.io/zh/home/talks/</link>
+      <link>/zh/home/talks/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/talks/</guid>
+      <guid>/zh/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>https://danielmarcelino.github.io/zh/home/posts/</link>
+      <link>/zh/home/posts/</link>
       <pubDate>Fri, 08 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/posts/</guid>
+      <guid>/zh/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://danielmarcelino.github.io/zh/home/tags/</link>
+      <link>/zh/home/tags/</link>
       <pubDate>Sat, 09 Feb 2019 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/tags/</guid>
+      <guid>/zh/home/tags/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://danielmarcelino.github.io/zh/home/contact/</link>
+      <link>/zh/home/contact/</link>
       <pubDate>Sat, 08 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/zh/home/contact/</guid>
+      <guid>/zh/home/contact/</guid>
       <description></description>
     </item>
     

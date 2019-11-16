@@ -2,112 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>An R Little Secret! How could I live without it?</title>
+      <link>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</link>
+      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</guid>
+      <description>For many years I&amp;rsquo;ve been coding using &lt;code&gt;dplyr&lt;/code&gt; functions and always get annoyde with conflict fuctions issues.</description>
+    </item>
+    
+    <item>
       <title>Bolsonaro&#39;s First Job Approval Ratings</title>
-      <link>https://danielmarcelino.github.io/post/2019-02-26-presidential-job-approval-ratings/</link>
+      <link>/post/2019-02-26-presidential-job-approval-ratings/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2019-02-26-presidential-job-approval-ratings/</guid>
+      <guid>/post/2019-02-26-presidential-job-approval-ratings/</guid>
       <description>President Jair Bolsonaro&amp;rsquo;s job approval ratings average 39.5% during his first quarter in office so far.</description>
     </item>
     
     <item>
       <title>Reading List Faster With parallel, doParallel, and pbapply</title>
-      <link>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</link>
+      <link>/post/2018-12-12-reading-list-faster/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</guid>
+      <guid>/post/2018-12-12-reading-list-faster/</guid>
       <description>It&amp;rsquo;s important to realise that every bit of optimisation matters.</description>
     </item>
     
     <item>
       <title>Will Brazil Goes to the Instant Runoff Election?</title>
-      <link>https://danielmarcelino.github.io/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
+      <link>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</link>
       <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
+      <guid>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</guid>
       <description>Pundits have been asking themselves over the last days if the Brazilian far-right candidate would win the election in the primary runoff.</description>
     </item>
     
     <item>
       <title>May the Force of R be With You, Always!</title>
-      <link>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
+      <link>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
+      <guid>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
       <description>With Telegram, the force of R can always be with me, where I have data.</description>
     </item>
     
     <item>
       <title>The Effective Number of Parties in the Electorate by Year and Region</title>
-      <link>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</link>
+      <link>/post/2016-11-26-effective-number-of-parties/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</guid>
+      <guid>/post/2016-11-26-effective-number-of-parties/</guid>
       <description>Using the American National Election Studies, compute the Effective Number of Parties in the electorate across regions and years/waves.</description>
     </item>
     
     <item>
       <title>Yet the Worst Olympic Chart</title>
-      <link>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</link>
+      <link>/post/2016-08-06-yet-the-worst-olympic-chart/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
+      <guid>/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
       <description>The Olympics barely began but we already have the worst chart winner.</description>
     </item>
     
     <item>
       <title>Data, Data, Data</title>
-      <link>https://danielmarcelino.github.io/post/2015-12-14-data-data-data/</link>
+      <link>/post/2015-12-14-data-data-data/</link>
       <pubDate>Mon, 14 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2015-12-14-data-data-data/</guid>
+      <guid>/post/2015-12-14-data-data-data/</guid>
       <description>Shows the distribution of therapeutic communities in Brazil.</description>
     </item>
     
     <item>
       <title>Isn&#39;t sad that all that matters in an election is the candidate&#39;s height?</title>
-      <link>https://danielmarcelino.github.io/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</link>
+      <link>/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</link>
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</guid>
+      <guid>/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</guid>
       <description>This post discusses the importance of candidates&amp;rsquo; stature in US presidential elections.</description>
     </item>
     
     <item>
       <title>A Bit More Fragmented</title>
-      <link>https://danielmarcelino.github.io/post/2014-10-06-a-bit-more-fragmented/</link>
+      <link>/post/2014-10-06-a-bit-more-fragmented/</link>
       <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2014-10-06-a-bit-more-fragmented/</guid>
+      <guid>/post/2014-10-06-a-bit-more-fragmented/</guid>
       <description>This entry discusses the legislative elections in Brazil, which turned out to produce one of the most fragmented parliament in the world.</description>
     </item>
     
     <item>
       <title>Yep. He made it, the country voted No</title>
-      <link>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
+      <link>/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
       <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
+      <guid>/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
       <description>This post talks big about my last predictions for the Referendum in Scotland.</description>
     </item>
     
     <item>
       <title>Bayes says `don&#39;t worry` about Scotland&#39;s Referendum</title>
-      <link>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
+      <link>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
       <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
+      <guid>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
       <description>This post uses Bayesian methods to show the anti-independence vote has an overwhelming advantage over the pro-independence side.</description>
     </item>
     

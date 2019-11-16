@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types on Dados * Análise &#43; R</title>
-    <link>https://danielmarcelino.github.io/pt/publication_types/</link>
+    <link>/pt/publication_types/</link>
     <description>Recent content in Publication_types on Dados * Análise &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-BR</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     
-	<atom:link href="https://danielmarcelino.github.io/pt/publication_types/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/pt/publication_types/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

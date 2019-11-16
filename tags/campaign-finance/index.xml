@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>campaign finance on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/campaign-finance/</link>
+    <link>/tags/campaign-finance/</link>
     <description>Recent content in campaign finance on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Mon, 01 Nov 2010 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/campaign-finance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/campaign-finance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Porque dinheiro importa: a dinâmica das contribuições eleitorais para o Congresso Nacional em 2002 e 2006</title>
-      <link>https://danielmarcelino.github.io/publication/2010-porque-dinheiro-importa/</link>
+      <link>/publication/2010-porque-dinheiro-importa/</link>
       <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/publication/2010-porque-dinheiro-importa/</guid>
+      <guid>/publication/2010-porque-dinheiro-importa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sobre dinheiro e eleições: um estudo dos gastos de campanha para o Congresso Nacional em 2002 e 2006</title>
-      <link>https://danielmarcelino.github.io/publication/2010-sobre-dinheiro-e-eleicoes/</link>
+      <link>/publication/2010-sobre-dinheiro-e-eleicoes/</link>
       <pubDate>Mon, 01 Nov 2010 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/publication/2010-sobre-dinheiro-e-eleicoes/</guid>
+      <guid>/publication/2010-sobre-dinheiro-e-eleicoes/</guid>
       <description></description>
     </item>
     

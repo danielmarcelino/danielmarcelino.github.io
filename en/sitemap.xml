@@ -3,10 +3,104 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/2019-04-04-what-matters-most-in-versioning/" hreflang="pt"/>
+      <loc>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+    </url>
     
-      <loc>https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/</loc>
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/categories/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/categories/" hreflang="zh"/>
+    
+      <loc>/categories/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/" hreflang="zh"/>
+    
+      <loc>/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/tags/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/tags/" hreflang="zh"/>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/dplyr/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/categories/reproducible/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/reproducible/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/categories/reproducible/" hreflang="zh"/>
+    
+      <loc>/categories/reproducible/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/categories/rstats/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/rstats/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/categories/rstats/" hreflang="zh"/>
+    
+      <loc>/categories/rstats/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/tags/rstats/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/rstats/" hreflang="pt"/>
+    
+      <loc>/tags/rstats/</loc>
+      <lastmod>2019-11-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <xhtml:link rel="alternate" href="/2019-04-04-what-matters-most-in-versioning/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/2019-04-04-what-matters-most-in-versioning/" hreflang="pt"/>
+    
+      <loc>/2019-04-04-what-matters-most-in-versioning/</loc>
       <lastmod>2019-04-03T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,11 +108,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/categories/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/categories/" hreflang="pt"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/categories/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/tags/git/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/git/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/categories/</loc>
+      <loc>/tags/git/</loc>
       <lastmod>2019-04-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -27,12 +120,20 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/" hreflang="pt"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/2019-04-08-bayesian-ideal-point-estimation/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/2019-04-08-bayesian-ideal-point-estimation/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/2019-04-08-bayesian-ideal-point-estimation/" hreflang="zh"/>
     
-      <loc>https://danielmarcelino.github.io/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+      <loc>/2019-04-08-bayesian-ideal-point-estimation/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bayesian/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -40,12 +141,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/" hreflang="pt"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/tags/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/tags/elections/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/elections/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/tags/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+      <loc>/tags/elections/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -53,11 +153,12 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/git/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/git/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/tags/stan/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/stan/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/tags/stan/" hreflang="zh"/>
     
-      <loc>https://danielmarcelino.github.io/tags/git/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
+      <loc>/tags/stan/</loc>
+      <lastmod>2019-04-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -65,43 +166,7 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/categories/reproducible/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/categories/reproducible/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/categories/reproducible/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/categories/rstats/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/categories/rstats/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/categories/rstats/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/rstats/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/rstats/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/tags/rstats/</loc>
-      <lastmod>2019-04-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/publication_types/2/</loc>
+      <loc>/publication_types/2/</loc>
       <lastmod>2019-03-01T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -110,7 +175,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2019-extreme-non-viable-candidates/</loc>
+      <loc>/publication/2019-extreme-non-viable-candidates/</loc>
       <lastmod>2019-03-01T00:00:00-03:00</lastmod>
     </url>
     
@@ -118,23 +183,11 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/publication_types/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/publication_types/" hreflang="pt"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/zh/publication_types/" hreflang="zh"/>
+      <xhtml:link rel="alternate" href="/publication_types/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/publication_types/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/publication_types/" hreflang="zh"/>
     
-      <loc>https://danielmarcelino.github.io/publication_types/</loc>
-      <lastmod>2019-03-01T00:00:00-03:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/categories/educational-assessment/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/categories/educational-assessment/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/categories/educational-assessment/</loc>
+      <loc>/publication_types/</loc>
       <lastmod>2019-03-01T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -143,7 +196,10 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/psychometrics/</loc>
+      <xhtml:link rel="alternate" href="/categories/educational-assessment/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/categories/educational-assessment/" hreflang="pt"/>
+    
+      <loc>/categories/educational-assessment/</loc>
       <lastmod>2019-03-01T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -152,7 +208,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2019-02-26-presidential-job-approval-ratings/</loc>
+      <loc>/tags/psychometrics/</loc>
+      <lastmod>2019-03-01T00:00:00-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2019-02-26-presidential-job-approval-ratings/</loc>
       <lastmod>2019-02-26T00:00:00+00:00</lastmod>
     </url>
     
@@ -160,7 +225,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/sciencespo/</loc>
+      <loc>/tags/sciencespo/</loc>
       <lastmod>2019-02-26T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -169,7 +234,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/politics/</loc>
+      <loc>/tags/politics/</loc>
       <lastmod>2019-02-26T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -178,7 +243,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/anova/</loc>
+      <loc>/project/anova/</loc>
       <lastmod>2018-12-27T00:00:00-02:00</lastmod>
     </url>
     
@@ -186,24 +251,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/</loc>
-      <lastmod>2018-12-27T00:00:00-02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/project/soccer-predictions/</loc>
-      <lastmod>2018-12-27T00:00:00-02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/rstats-proj/</loc>
+      <loc>/project/</loc>
       <lastmod>2018-12-27T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -212,7 +260,15 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/categories/sports/</loc>
+      <loc>/project/soccer-predictions/</loc>
+      <lastmod>2018-12-27T00:00:00-02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rstats-proj/</loc>
       <lastmod>2018-12-27T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -221,7 +277,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/sports-proj/</loc>
+      <loc>/categories/sports/</loc>
       <lastmod>2018-12-27T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -230,7 +286,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</loc>
+      <loc>/tags/sports-proj/</loc>
+      <lastmod>2018-12-27T00:00:00-02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2018-12-12-reading-list-faster/</loc>
       <lastmod>2018-12-12T00:00:00+00:00</lastmod>
     </url>
     
@@ -238,16 +303,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/doparallel/</loc>
-      <lastmod>2018-12-12T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/parallel/</loc>
+      <loc>/tags/doparallel/</loc>
       <lastmod>2018-12-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -256,7 +312,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/pbapply/</loc>
+      <loc>/tags/parallel/</loc>
       <lastmod>2018-12-12T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -265,7 +321,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/mapping/</loc>
+      <loc>/tags/pbapply/</loc>
+      <lastmod>2018-12-12T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/mapping/</loc>
       <lastmod>2018-10-10T00:00:00-03:00</lastmod>
     </url>
     
@@ -273,7 +338,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/educational-assessment-proj/</loc>
+      <loc>/tags/educational-assessment-proj/</loc>
       <lastmod>2018-10-10T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -282,7 +347,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</loc>
+      <loc>/post/2018-10-06-will-brazil-goes-to-the-instant-runoff-election/</loc>
       <lastmod>2018-10-06T00:00:00+00:00</lastmod>
     </url>
     
@@ -290,7 +355,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tutorial/example/</loc>
+      <loc>/tutorial/example/</loc>
       <lastmod>2018-09-09T00:00:00-03:00</lastmod>
     </url>
     
@@ -298,7 +363,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tutorial/</loc>
+      <loc>/tutorial/</loc>
       <lastmod>2018-09-09T00:00:00-03:00</lastmod>
     </url>
     
@@ -306,7 +371,19 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/</loc>
+      <xhtml:link rel="alternate" href="/privacy/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/privacy/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/zh/privacy/" hreflang="zh"/>
+    
+      <loc>/privacy/</loc>
+      <lastmod>2018-06-28T00:00:00-03:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/</loc>
       <lastmod>2018-01-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -314,7 +391,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2017-politicas-publicas-baseadas-em-evidencias/</loc>
+      <loc>/publication/2017-politicas-publicas-baseadas-em-evidencias/</loc>
       <lastmod>2017-09-01T00:00:00-03:00</lastmod>
     </url>
     
@@ -322,16 +399,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/curitiba/</loc>
-      <lastmod>2017-09-01T00:00:00-03:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/methods/</loc>
+      <loc>/tags/curitiba/</loc>
       <lastmod>2017-09-01T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -340,7 +408,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/sports/</loc>
+      <loc>/tags/methods/</loc>
       <lastmod>2017-09-01T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -349,7 +417,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/got/</loc>
+      <loc>/tags/sports/</loc>
+      <lastmod>2017-09-01T00:00:00-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/project/got/</loc>
       <lastmod>2017-06-15T00:00:00-03:00</lastmod>
     </url>
     
@@ -357,16 +434,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/deep-learning/</loc>
-      <lastmod>2017-06-15T00:00:00-03:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/machine-learning/</loc>
+      <loc>/tags/deep-learning/</loc>
       <lastmod>2017-06-15T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -375,7 +443,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</loc>
+      <loc>/tags/machine-learning/</loc>
+      <lastmod>2017-06-15T00:00:00-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</loc>
       <lastmod>2017-01-02T00:00:00+00:00</lastmod>
     </url>
     
@@ -383,7 +460,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/telegram/</loc>
+      <loc>/tags/telegram/</loc>
       <lastmod>2017-01-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -392,7 +469,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -400,10 +477,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/talk/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/talk/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/talk/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/talk/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -411,7 +488,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2016-11-26-effective-number-of-parties/</loc>
+      <loc>/post/2016-11-26-effective-number-of-parties/</loc>
       <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -419,7 +496,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2016-11-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -428,7 +505,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/viz/</loc>
+      <loc>/tags/viz/</loc>
       <lastmod>2016-11-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -437,10 +514,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/talk/2016-11-16-data-sciences-and-society/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/talk/2016-11-16-data-sciences-and-society/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/talk/2016-11-16-data-sciences-and-society/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/</loc>
+      <loc>/talk/2016-11-16-data-sciences-and-society/</loc>
       <lastmod>2016-11-16T00:00:00-02:00</lastmod>
     </url>
     
@@ -448,7 +525,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</loc>
+      <loc>/post/2016-08-06-yet-the-worst-olympic-chart/</loc>
       <lastmod>2016-08-06T00:00:00+00:00</lastmod>
     </url>
     
@@ -456,7 +533,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/brexit/</loc>
+      <loc>/project/brexit/</loc>
       <lastmod>2016-06-25T00:00:00-03:00</lastmod>
     </url>
     
@@ -464,7 +541,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/pitaco/</loc>
+      <loc>/project/pitaco/</loc>
       <lastmod>2016-06-25T00:00:00-03:00</lastmod>
     </url>
     
@@ -472,10 +549,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/talk/2016-06-07-survey-therapeutic-communities/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/talk/2016-06-07-survey-therapeutic-communities/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/talk/2016-06-07-survey-therapeutic-communities/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/</loc>
+      <loc>/talk/2016-06-07-survey-therapeutic-communities/</loc>
       <lastmod>2016-06-07T00:00:00-03:00</lastmod>
     </url>
     
@@ -483,22 +560,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/gov/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/gov/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/tags/gov/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/gov/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/tags/gov/</loc>
-      <lastmod>2016-06-07T00:00:00-03:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/sampling/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/sampling/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/tags/sampling/</loc>
+      <loc>/tags/gov/</loc>
       <lastmod>2016-06-07T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -507,7 +572,19 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2015-12-14-data-data-data/</loc>
+      <xhtml:link rel="alternate" href="/tags/sampling/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/sampling/" hreflang="pt"/>
+    
+      <loc>/tags/sampling/</loc>
+      <lastmod>2016-06-07T00:00:00-03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/2015-12-14-data-data-data/</loc>
       <lastmod>2015-12-14T00:00:00+00:00</lastmod>
     </url>
     
@@ -515,19 +592,7 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/elections/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/elections/" hreflang="pt"/>
-    
-      <loc>https://danielmarcelino.github.io/tags/elections/</loc>
-      <lastmod>2015-12-14T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</loc>
+      <loc>/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</loc>
       <lastmod>2015-09-15T00:00:00+00:00</lastmod>
     </url>
     
@@ -535,10 +600,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/reproducible/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/reproducible/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/tags/reproducible/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/reproducible/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/tags/reproducible/</loc>
+      <loc>/tags/reproducible/</loc>
       <lastmod>2015-09-15T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -547,10 +612,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/talk/2015-06-07-tutorial-r-selenium/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/talk/2015-06-07-tutorial-r-selenium/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/talk/2015-06-07-tutorial-r-selenium/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/talk/2015-06-07-tutorial-r-selenium/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/talk/2015-06-07-tutorial-r-selenium/</loc>
+      <loc>/talk/2015-06-07-tutorial-r-selenium/</loc>
       <lastmod>2015-06-07T00:00:00-03:00</lastmod>
     </url>
     
@@ -558,7 +623,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2014-10-06-a-bit-more-fragmented/</loc>
+      <loc>/post/2014-10-06-a-bit-more-fragmented/</loc>
       <lastmod>2014-10-06T00:00:00+00:00</lastmod>
     </url>
     
@@ -566,7 +631,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</loc>
+      <loc>/post/2014-09-19-yep-he-made-it-country-voted-no/</loc>
       <lastmod>2014-09-19T00:00:00+00:00</lastmod>
     </url>
     
@@ -574,7 +639,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/polls/</loc>
+      <loc>/tags/polls/</loc>
       <lastmod>2014-09-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -583,7 +648,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</loc>
+      <loc>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</loc>
       <lastmod>2014-09-17T00:00:00+00:00</lastmod>
     </url>
     
@@ -591,7 +656,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication_types/7/</loc>
+      <loc>/publication_types/7/</loc>
       <lastmod>2014-09-15T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -600,7 +665,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2015-sage-encyclopedia/</loc>
+      <loc>/publication/2015-sage-encyclopedia/</loc>
       <lastmod>2014-09-15T00:00:00-03:00</lastmod>
     </url>
     
@@ -608,7 +673,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/talk/2014-08-05-when-the-winner/</loc>
+      <loc>/talk/2014-08-05-when-the-winner/</loc>
       <lastmod>2014-08-05T00:00:00-03:00</lastmod>
     </url>
     
@@ -616,16 +681,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/bayesian/</loc>
-      <lastmod>2014-08-05T00:00:00-03:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/educational-assessment/</loc>
+      <loc>/tags/educational-assessment/</loc>
       <lastmod>2014-08-05T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -634,7 +690,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/election/</loc>
+      <loc>/tags/election/</loc>
       <lastmod>2014-08-05T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -643,10 +699,10 @@
     
     <url>
     
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/tags/public-opinion/" hreflang="en"/>
-      <xhtml:link rel="alternate" href="https://danielmarcelino.github.io/pt/tags/public-opinion/" hreflang="pt"/>
+      <xhtml:link rel="alternate" href="/tags/public-opinion/" hreflang="en"/>
+      <xhtml:link rel="alternate" href="/pt/tags/public-opinion/" hreflang="pt"/>
     
-      <loc>https://danielmarcelino.github.io/tags/public-opinion/</loc>
+      <loc>/tags/public-opinion/</loc>
       <lastmod>2014-08-05T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -655,7 +711,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/sciencespo/</loc>
+      <loc>/project/sciencespo/</loc>
       <lastmod>2013-01-03T00:00:00-02:00</lastmod>
     </url>
     
@@ -663,7 +719,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/fptp2av/</loc>
+      <loc>/project/fptp2av/</loc>
       <lastmod>2011-09-15T00:00:00-03:00</lastmod>
     </url>
     
@@ -671,7 +727,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/categories/simulations/</loc>
+      <loc>/categories/simulations/</loc>
       <lastmod>2011-09-15T00:00:00-03:00</lastmod>
       <priority>0</priority>
     </url>
@@ -680,7 +736,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/soundexbr/</loc>
+      <loc>/project/soundexbr/</loc>
       <lastmod>2011-01-15T00:00:00-02:00</lastmod>
     </url>
     
@@ -688,7 +744,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/project/multilevel/</loc>
+      <loc>/project/multilevel/</loc>
       <lastmod>2010-12-27T00:00:00-02:00</lastmod>
     </url>
     
@@ -696,7 +752,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication_types/3/</loc>
+      <loc>/publication_types/3/</loc>
       <lastmod>2010-11-01T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -705,7 +761,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2010-porque-dinheiro-importa/</loc>
+      <loc>/publication/2010-porque-dinheiro-importa/</loc>
       <lastmod>2010-11-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -713,7 +769,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2010-sobre-dinheiro-e-eleicoes/</loc>
+      <loc>/publication/2010-sobre-dinheiro-e-eleicoes/</loc>
       <lastmod>2010-11-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -721,16 +777,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/campaign-finance/</loc>
-      <lastmod>2010-11-01T00:00:00-02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/congress/</loc>
+      <loc>/tags/campaign-finance/</loc>
       <lastmod>2010-11-01T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -739,7 +786,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2009-enigma-do-centrao/</loc>
+      <loc>/tags/congress/</loc>
+      <lastmod>2010-11-01T00:00:00-02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/2009-enigma-do-centrao/</loc>
       <lastmod>2009-02-01T00:00:00-02:00</lastmod>
     </url>
     
@@ -747,7 +803,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/brazilian-politics/</loc>
+      <loc>/tags/brazilian-politics/</loc>
       <lastmod>2009-02-01T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -756,7 +812,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/publication/2009-cabeca-do-jornalista-brasileiro/</loc>
+      <loc>/publication/2009-cabeca-do-jornalista-brasileiro/</loc>
       <lastmod>2009-01-15T00:00:00-02:00</lastmod>
     </url>
     
@@ -764,16 +820,7 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/journalism/</loc>
-      <lastmod>2009-01-15T00:00:00-02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://danielmarcelino.github.io/tags/political-values/</loc>
+      <loc>/tags/journalism/</loc>
       <lastmod>2009-01-15T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -782,7 +829,16 @@
     
     <url>
     
-      <loc>https://danielmarcelino.github.io/tags/survey/</loc>
+      <loc>/tags/political-values/</loc>
+      <lastmod>2009-01-15T00:00:00-02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/survey/</loc>
       <lastmod>2009-01-15T00:00:00-02:00</lastmod>
       <priority>0</priority>
     </url>

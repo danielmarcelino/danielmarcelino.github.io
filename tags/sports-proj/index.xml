@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sports-proj on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/sports-proj/</link>
+    <link>/tags/sports-proj/</link>
     <description>Recent content in sports-proj on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Thu, 27 Dec 2018 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/sports-proj/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/sports-proj/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Soccer Predictions Using Bayesian Mixed Effects Models</title>
-      <link>https://danielmarcelino.github.io/project/soccer-predictions/</link>
+      <link>/project/soccer-predictions/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/project/soccer-predictions/</guid>
+      <guid>/project/soccer-predictions/</guid>
       <description>Models developed for the prediction of individual games, European domestic leagues, and the UEFA Champions League.</description>
     </item>
     

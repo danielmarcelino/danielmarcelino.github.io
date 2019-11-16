@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>journalism on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/journalism/</link>
+    <link>/tags/journalism/</link>
     <description>Recent content in journalism on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Thu, 15 Jan 2009 00:00:00 -0200</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/journalism/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/journalism/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A cabeça do jornalista:opiniões e valores políticosdos jornalistas no Brasil</title>
-      <link>https://danielmarcelino.github.io/publication/2009-cabeca-do-jornalista-brasileiro/</link>
+      <link>/publication/2009-cabeca-do-jornalista-brasileiro/</link>
       <pubDate>Thu, 15 Jan 2009 00:00:00 -0200</pubDate>
       
-      <guid>https://danielmarcelino.github.io/publication/2009-cabeca-do-jornalista-brasileiro/</guid>
+      <guid>/publication/2009-cabeca-do-jornalista-brasileiro/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>telegram on Data * Analysis &#43; R</title>
-    <link>https://danielmarcelino.github.io/tags/telegram/</link>
+    <link>/tags/telegram/</link>
     <description>Recent content in telegram on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Mon, 02 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/telegram/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>May the Force of R be With You, Always!</title>
-      <link>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
+      <link>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
+      <guid>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
       <description>With Telegram, the force of R can always be with me, where I have data.</description>
     </item>
     

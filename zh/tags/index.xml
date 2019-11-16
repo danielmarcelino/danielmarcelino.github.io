@@ -2,14 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 数据 * 分析 &#43; R</title>
-    <link>https://danielmarcelino.github.io/zh/tags/</link>
+    <link>/zh/tags/</link>
     <description>Recent content in Tags on 数据 * 分析 &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
+    <lastBuildDate>Tue, 02 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://danielmarcelino.github.io/zh/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/zh/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bayesiana</title>
+      <link>/zh/tags/bayesiana/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/bayesiana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eleições</title>
+      <link>/zh/tags/elei%C3%A7%C3%B5es/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/elei%C3%A7%C3%B5es/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stan</title>
+      <link>/zh/tags/stan/</link>
+      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/zh/tags/stan/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
