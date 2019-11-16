@@ -2,131 +2,113 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rstats on Data * Analysis &#43; R</title>
-    <link>/tags/rstats/</link>
+    <link>https://danielmarcelino.github.io/tags/rstats/</link>
     <description>Recent content in rstats on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
-    <lastBuildDate>Sun, 17 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/rstats/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/tags/rstats/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>An R Little Secret! How could I live without it?</title>
-      <link>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</link>
-      <pubDate>Sun, 17 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2019-11-17-r-little-secret-how-could-i-live-without-it/</guid>
-      <description>For many years I&amp;rsquo;ve been coding using &lt;code&gt;dplyr&lt;/code&gt; functions and always get annoyde with conflict fuctions issues.</description>
-    </item>
     
     <item>
       <title>Be the Best at What Matters Most in Versioning Control</title>
-      <link>/2019-04-04-what-matters-most-in-versioning/</link>
+      <link>https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019-04-04-what-matters-most-in-versioning/</guid>
+      <guid>https://danielmarcelino.github.io/2019-04-04-what-matters-most-in-versioning/</guid>
       <description>I won&amp;rsquo;t give you details on git version control tools. Instead, I&amp;rsquo;ll only ask you to commit to memory these few commands&amp;hellip;</description>
     </item>
     
     <item>
-      <title>Bayesian Ideal Points Estimation</title>
-      <link>/2019-04-08-bayesian-ideal-point-estimation/</link>
-      <pubDate>Tue, 02 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019-04-08-bayesian-ideal-point-estimation/</guid>
-      <description>Packages you’ll need  First of all, make sure you’ve a working C++ compiler in your machine; you’ll need it for Stan/rstan to work.  # devtools::install_github(&amp;quot;dmarcelino/SenadoBR&amp;quot;) # devtools::install_github(&amp;quot;rmcelreath/rethinking&amp;quot;) library(readr) # pacakge for reading data library(rstan) # package for interacting with Stan (sampling over distributions) # library(rethinking) # package for interacting with Stan library(ggplot2) # package for plotting   Introduction This tutorial will use data from the brazilian Senate, and build a comparison between two approaches very widespread in the political science studies.</description>
-    </item>
-    
-    <item>
       <title>Reading List Faster With parallel, doParallel, and pbapply</title>
-      <link>/post/2018-12-12-reading-list-faster/</link>
+      <link>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</link>
       <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-12-12-reading-list-faster/</guid>
+      <guid>https://danielmarcelino.github.io/post/2018-12-12-reading-list-faster/</guid>
       <description>It&amp;rsquo;s important to realise that every bit of optimisation matters.</description>
     </item>
     
     <item>
       <title>May the Force of R be With You, Always!</title>
-      <link>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
+      <link>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</link>
       <pubDate>Mon, 02 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
+      <guid>https://danielmarcelino.github.io/post/2017-01-02-may-the-force-of-r-be-with-you-always/</guid>
       <description>With Telegram, the force of R can always be with me, where I have data.</description>
     </item>
     
     <item>
       <title>Data Science and Society: The SciencesPo R Package</title>
-      <link>/talk/2016-11-16-data-sciences-and-society/</link>
+      <link>https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/</link>
       <pubDate>Wed, 16 Nov 2016 00:00:00 -0200</pubDate>
       
-      <guid>/talk/2016-11-16-data-sciences-and-society/</guid>
+      <guid>https://danielmarcelino.github.io/talk/2016-11-16-data-sciences-and-society/</guid>
       <description>This presentation is part of a coordinated edition seminar, Data Science and Society, organized by IBPAD and Núcleo de Estudos e Pesquisa em Políticas Públicas, Governo e Gestão (NP3-UnB).</description>
     </item>
     
     <item>
       <title>Yet the Worst Olympic Chart</title>
-      <link>/post/2016-08-06-yet-the-worst-olympic-chart/</link>
+      <link>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</link>
       <pubDate>Sat, 06 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
+      <guid>https://danielmarcelino.github.io/post/2016-08-06-yet-the-worst-olympic-chart/</guid>
       <description>The Olympics barely began but we already have the worst chart winner.</description>
     </item>
     
     <item>
       <title>Synthesis of the Survey of Therapeutic Communities in Brazil</title>
-      <link>/talk/2016-06-07-survey-therapeutic-communities/</link>
+      <link>https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
       
-      <guid>/talk/2016-06-07-survey-therapeutic-communities/</guid>
+      <guid>https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/</guid>
       <description>Below are additional resources for those who are interested in getting more information about this survey results.
  Comunidades terapêuticas e a disputa entre modelos de atenção e cuidado a usuários de droga Comunidades terapêuticas: temas para reflexão.  </description>
     </item>
     
     <item>
       <title>Data, Data, Data</title>
-      <link>/post/2015-12-14-data-data-data/</link>
+      <link>https://danielmarcelino.github.io/post/2015-12-14-data-data-data/</link>
       <pubDate>Mon, 14 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-12-14-data-data-data/</guid>
+      <guid>https://danielmarcelino.github.io/post/2015-12-14-data-data-data/</guid>
       <description>Shows the distribution of therapeutic communities in Brazil.</description>
     </item>
     
     <item>
       <title>Isn&#39;t sad that all that matters in an election is the candidate&#39;s height?</title>
-      <link>/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</link>
+      <link>https://danielmarcelino.github.io/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</link>
       <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</guid>
+      <guid>https://danielmarcelino.github.io/post/2015-09-15-isnt-sad-that-all-that-matters-in-an-election-is-the-candidates-height/</guid>
       <description>This post discusses the importance of candidates&amp;rsquo; stature in US presidential elections.</description>
     </item>
     
     <item>
       <title>A Bit More Fragmented</title>
-      <link>/post/2014-10-06-a-bit-more-fragmented/</link>
+      <link>https://danielmarcelino.github.io/post/2014-10-06-a-bit-more-fragmented/</link>
       <pubDate>Mon, 06 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-10-06-a-bit-more-fragmented/</guid>
+      <guid>https://danielmarcelino.github.io/post/2014-10-06-a-bit-more-fragmented/</guid>
       <description>This entry discusses the legislative elections in Brazil, which turned out to produce one of the most fragmented parliament in the world.</description>
     </item>
     
     <item>
       <title>Yep. He made it, the country voted No</title>
-      <link>/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
+      <link>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</link>
       <pubDate>Fri, 19 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
+      <guid>https://danielmarcelino.github.io/post/2014-09-19-yep-he-made-it-country-voted-no/</guid>
       <description>This post talks big about my last predictions for the Referendum in Scotland.</description>
     </item>
     
     <item>
       <title>Bayes says `don&#39;t worry` about Scotland&#39;s Referendum</title>
-      <link>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
+      <link>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</link>
       <pubDate>Wed, 17 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
+      <guid>https://danielmarcelino.github.io/post/2014-09-17-bayes-says-dont-worry-about-scotlands-referendum/</guid>
       <description>This post uses Bayesian methods to show the anti-independence vote has an overwhelming advantage over the pro-independence side.</description>
     </item>
     

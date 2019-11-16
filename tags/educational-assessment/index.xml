@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>educational-assessment on Data * Analysis &#43; R</title>
-    <link>/tags/educational-assessment/</link>
+    <link>https://danielmarcelino.github.io/tags/educational-assessment/</link>
     <description>Recent content in educational-assessment on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Tue, 05 Aug 2014 00:00:00 -0300</lastBuildDate>
     
-	<atom:link href="/tags/educational-assessment/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/tags/educational-assessment/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>When the Winner Comes Third: Simulating Candidates&#39; Winnability With Inaccurate Polls</title>
-      <link>/talk/2014-08-05-when-the-winner/</link>
+      <link>https://danielmarcelino.github.io/talk/2014-08-05-when-the-winner/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 -0300</pubDate>
       
-      <guid>/talk/2014-08-05-when-the-winner/</guid>
+      <guid>https://danielmarcelino.github.io/talk/2014-08-05-when-the-winner/</guid>
       <description></description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gov on Data * Analysis &#43; R</title>
-    <link>/tags/gov/</link>
+    <link>https://danielmarcelino.github.io/tags/gov/</link>
     <description>Recent content in gov on Data * Analysis &#43; R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2019 Daniel Marcelino</copyright>
     <lastBuildDate>Tue, 07 Jun 2016 00:00:00 -0300</lastBuildDate>
     
-	<atom:link href="/tags/gov/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://danielmarcelino.github.io/tags/gov/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Synthesis of the Survey of Therapeutic Communities in Brazil</title>
-      <link>/talk/2016-06-07-survey-therapeutic-communities/</link>
+      <link>https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 -0300</pubDate>
       
-      <guid>/talk/2016-06-07-survey-therapeutic-communities/</guid>
+      <guid>https://danielmarcelino.github.io/talk/2016-06-07-survey-therapeutic-communities/</guid>
       <description>Below are additional resources for those who are interested in getting more information about this survey results.
  Comunidades terapêuticas e a disputa entre modelos de atenção e cuidado a usuários de droga Comunidades terapêuticas: temas para reflexão.  </description>
     </item>
